@@ -231,4 +231,77 @@ describe('Look A Like — Celebrity Database & Indian Celebrity Resemblance', ()
     expect(results[1].celebrity.gender).toBe('female');
     expect(results[2].celebrity.gender).toBe('male');
   });
+
+  it('strictly returns null when userFeatures is null or undefined (no silent fallback to index 0)', () => {
+    expect(findClosestCelebrity(null)).toBeNull();
+    expect(findClosestCelebrity(undefined)).toBeNull();
+    expect(findClosestCelebrity(null, { collection: 'female' })).toBeNull();
+    expect(findClosestCelebrity(null, { collection: 'male' })).toBeNull();
+  });
+
+  it('correctly maps Aishwarya Rai Bachchan with verified image path and metadata (Bug 2 fix)', () => {
+    const ar = FEMALE_CELEBRITIES.find((c) => c.id === 'female_ar_regal');
+    expect(ar).toBeDefined();
+    expect(ar.name).toBe('Aishwarya Rai Bachchan');
+    expect(ar.image).toBe('/assets/LookALike/Female/Aishwarya_Rai/aishwarya_rai_regal_intensity_01.jpg');
+    expect(ar.gender).toBe('female');
+    expect(ar.badge).toBe('GLOBAL ICON');
+
+    // Matching against regal gaze expression returns Aishwarya Rai Bachchan
+    const regalGaze = {
+      blendshapes: {
+        browDownLeft: 0.7,
+        browDownRight: 0.7,
+        eyeWideLeft: 0.6,
+        eyeWideRight: 0.6,
+        mouthPressLeft: 0.5,
+        mouthPressRight: 0.5,
+      },
+      ratios: {
+        browRaiseRatio: 0.22,
+        eyeOpenRatio: 0.26,
+        mouthOpenRatio: 0.03,
+      },
+    };
+    const match = findClosestCelebrity(regalGaze, { collection: 'female' });
+    expect(match.name).toBe('Aishwarya Rai Bachchan');
+    expect(match.image).toBe('/assets/LookALike/Female/Aishwarya_Rai/aishwarya_rai_regal_intensity_01.jpg');
+  });
+
+  it('produces distinct celebrity matches for participants with different expressions (Bug 1 fix)', () => {
+    const smileUser = {
+      blendshapes: { mouthSmileLeft: 0.9, mouthSmileRight: 0.9, cheekSquintLeft: 0.7, cheekSquintRight: 0.7 },
+      ratios: { mouthOpenRatio: 0.22, mouthCornerTilt: 0.18 },
+    };
+    const shockUser = {
+      blendshapes: { jawOpen: 0.85, eyeWideLeft: 0.85, eyeWideRight: 0.85, browInnerUp: 0.8 },
+      ratios: { mouthOpenRatio: 0.5, eyeOpenRatio: 0.35 },
+    };
+    const frownUser = {
+      blendshapes: { browDownLeft: 0.85, browDownRight: 0.85, mouthPressLeft: 0.7, mouthPressRight: 0.7 },
+      ratios: { mouthOpenRatio: 0.02, mouthCornerTilt: -0.1 },
+    };
+
+    // Female collection: 3 different expressions must NOT all return candidate 0
+    const femaleMatch1 = findClosestCelebrity(smileUser, { collection: 'female' });
+    const femaleMatch2 = findClosestCelebrity(shockUser, { collection: 'female' });
+    const femaleMatch3 = findClosestCelebrity(frownUser, { collection: 'female' });
+
+    expect(femaleMatch1).toBeDefined();
+    expect(femaleMatch2).toBeDefined();
+    expect(femaleMatch3).toBeDefined();
+    const femaleSet = new Set([femaleMatch1.id, femaleMatch2.id, femaleMatch3.id]);
+    expect(femaleSet.size).toBeGreaterThan(1);
+
+    // Male collection: 3 different expressions must produce diverse matches
+    const maleMatch1 = findClosestCelebrity(smileUser, { collection: 'male' });
+    const maleMatch2 = findClosestCelebrity(shockUser, { collection: 'male' });
+    const maleMatch3 = findClosestCelebrity(frownUser, { collection: 'male' });
+
+    expect(maleMatch1).toBeDefined();
+    expect(maleMatch2).toBeDefined();
+    expect(maleMatch3).toBeDefined();
+    const maleSet = new Set([maleMatch1.id, maleMatch2.id, maleMatch3.id]);
+    expect(maleSet.size).toBeGreaterThan(1);
+  });
 });

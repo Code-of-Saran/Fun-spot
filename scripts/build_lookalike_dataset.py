@@ -69,7 +69,7 @@ EXISTING_MAPPINGS = {
     "Male/YB 2.jpg": ("Yogi_Babu", "yogi_babu_comedic_shock_02.jpg", "Yogi Babu", "Hilarious Comedic Shock", "shock", "Comedic Shock Expression", "Realizing you were volunteered as the chief guest for a boxing match.", "KING OF DEADPAN", "#a855f7"),
 
     # FEMALE
-    "Female/AR.jpg": ("Anushka_Shetty", "anushka_shetty_majestic_intensity_01.jpg", "Anushka Shetty", "Majestic Devasena Intensity", "overdramatic", "Regal Royal Gaze", "Exuding royal majesty that commands silence across the kingdom.", "LADY SUPERSTAR", "#e11d48"),
+    "Female/AR.jpg": ("Aishwarya_Rai", "aishwarya_rai_regal_intensity_01.jpg", "Aishwarya Rai Bachchan", "Majestic Royal Elegance", "overdramatic", "Regal Royal Gaze", "Exuding regal elegance and poise that commands silence across the room.", "GLOBAL ICON", "#e11d48"),
     "Female/Hansika.jpg": ("Hansika_Motwani", "hansika_motwani_bubbly_charm_01.jpg", "Hansika Motwani", "Radiant Bubbly Charm", "smile_grin", "Playful Sparkling Smile", "Lighting up an entire song sequence with boundless cheerfulness.", "BUBBLY STAR", "#f43f5e"),
     "Female/IL.jpg": ("Ileana_DCruz", "ileana_dcruz_sassy_wink_01.jpg", "Ileana D'Cruz", "Playful Sassy Wink", "sarcastic_smirk", "Knowing Wink", "Delivering a knowing wink when you successfully solve the puzzle before everyone.", "SASSY ICON", "#f43f5e"),
     "Female/images (1).jpg": ("Tamannaah_Bhatia", "tamannaah_bhatia_dazzling_grin_01.jpg", "Tamannaah Bhatia", "Milky Beauty Dazzling Grin", "smile_grin", "Dazzling High-Glam Grin", "Flashing a camera-ready smile that captivates every festival audience.", "GLAMOUR QUEEN", "#fb7185"),

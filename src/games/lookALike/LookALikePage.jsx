@@ -382,7 +382,9 @@ export default function LookALikePage() {
                     disabled={
                       matcher.workflowState === 'capturing' ||
                       matcher.workflowState === 'analyzing' ||
-                      matcher.camera.status !== 'ready'
+                      matcher.camera.status !== 'ready' ||
+                      !matcher.modelReady ||
+                      !matcher.faceDetected
                     }
                     id="btn-capture-solo"
                   >
@@ -391,6 +393,12 @@ export default function LookALikePage() {
                       ? 'CAPTURING...'
                       : matcher.workflowState === 'analyzing'
                       ? 'ANALYZING...'
+                      : matcher.camera.status !== 'ready'
+                      ? 'STARTING CAMERA...'
+                      : !matcher.modelReady
+                      ? 'INITIALIZING AI...'
+                      : !matcher.faceDetected
+                      ? 'LOOK AT CAMERA'
                       : 'CAPTURE PHOTO'}
                   </button>
                 )}

@@ -3437,15 +3437,15 @@ export const MALE_CELEBRITIES = [
 export const FEMALE_CELEBRITIES = [
   {
     "id": "female_ar_regal",
-    "name": "Anushka Shetty",
+    "name": "Aishwarya Rai Bachchan",
     "title": "Regal Royal Gaze",
-    "expression": "Majestic Devasena Intensity",
-    "description": "Exuding royal majesty that commands silence across the kingdom.",
-    "image": "/assets/LookALike/Female/Anushka_Shetty/anushka_shetty_majestic_intensity_01.jpg",
+    "expression": "Majestic Royal Elegance",
+    "description": "Exuding regal elegance and poise that commands silence across the room.",
+    "image": "/assets/LookALike/Female/Aishwarya_Rai/aishwarya_rai_regal_intensity_01.jpg",
     "gender": "female",
     "collection": "female",
     "filmIndustry": "Indian Cinema",
-    "badge": "LADY SUPERSTAR",
+    "badge": "GLOBAL ICON",
     "themeColor": "#e11d48",
     "targetBlendshapes": {
       "browDownLeft": 0.7,
@@ -3466,8 +3466,8 @@ export const FEMALE_CELEBRITIES = [
       "pitch": 0.04,
       "roll": 0
     },
-    "referenceId": "anushka_shetty_majestic_intensity_01",
-    "celebrityId": "anushka_shetty",
+    "referenceId": "aishwarya_rai_regal_intensity_01",
+    "celebrityId": "aishwarya_rai",
     "expressionCategory": "overdramatic",
     "appearanceFeatures": {
       "faceAspectRatio": 0.75,
@@ -4810,53 +4810,85 @@ export const CELEBRITY_DATABASE = [
  * @returns {number} normalized distance score (>= 0)
  */
 export function calculateCelebrityDistance(userFeatures, celeb) {
-  if (!userFeatures) return Infinity;
+  if (!userFeatures || !celeb) return Infinity;
 
   const userBS = userFeatures.blendshapes || {};
-  const celebBS = celeb.targetBlendshapes || {};
+  const celebBS = celeb.targetBlendshapes || celeb.blendshapes || {};
   const userRatios = userFeatures.ratios || {};
-  const celebRatios = celeb.targetRatios || {};
-  const userApp = userFeatures.appearance || {};
-  const celebApp = celeb.appearanceFeatures || {};
+  const celebRatios = celeb.targetRatios || celeb.ratios || {};
+  const userApp = userFeatures.appearance || userFeatures.appearanceFeatures || {};
+  const celebApp = celeb.appearanceFeatures || celeb.appearance || {};
 
   // 1. Expression Blendshapes & Dynamic Ratios Distance (45%)
-  let bsDiffSum = 0;
-  let bsCount = 0;
-  const allBSKeys = new Set([...Object.keys(celebBS)]);
+  const CORE_EXPRESSION_KEYS = [
+    'mouthSmileLeft',
+    'mouthSmileRight',
+    'jawOpen',
+    'eyeWideLeft',
+    'eyeWideRight',
+    'eyeSquintLeft',
+    'eyeSquintRight',
+    'browInnerUp',
+    'browDownLeft',
+    'browDownRight',
+    'mouthPucker',
+    'mouthPressLeft',
+    'mouthPressRight',
+    'mouthFrownLeft',
+    'mouthFrownRight',
+    'mouthShrugLower',
+    'eyeBlinkLeft',
+    'eyeBlinkRight',
+    'cheekSquintLeft',
+    'cheekSquintRight',
+    'noseSneerLeft',
+    'noseSneerRight',
+  ];
 
-  for (const key of allBSKeys) {
+  const evalBSKeys = new Set([
+    ...CORE_EXPRESSION_KEYS,
+    ...Object.keys(celebBS),
+    ...Object.keys(userBS),
+  ]);
+
+  let bsDiffSum = 0;
+  let bsWeightSum = 0;
+
+  for (const key of evalBSKeys) {
     const targetVal = celebBS[key] ?? 0;
     const actualVal = userBS[key] ?? 0;
+    const weight = (targetVal > 0.25 || actualVal > 0.25) ? 2.0 : 0.8;
     const diff = targetVal - actualVal;
-    bsDiffSum += diff * diff;
-    bsCount++;
+    bsDiffSum += weight * diff * diff;
+    bsWeightSum += weight;
   }
-  const bsDistance = bsCount > 0 ? Math.sqrt(bsDiffSum / bsCount) : 1;
+  const bsDistance = bsWeightSum > 0 ? Math.sqrt(bsDiffSum / bsWeightSum) : 0.5;
 
   // Key dynamic expression ratios
   let exprRatioDiffSum = 0;
   let exprRatioCount = 0;
-  const exprKeys = ['mouthOpenRatio', 'mouthCornerTilt', 'browRaiseRatio'];
+  const exprKeys = ['mouthOpenRatio', 'mouthCornerTilt', 'browRaiseRatio', 'eyeOpenRatio', 'mouthWidthRatio'];
   for (const key of exprKeys) {
     if (celebRatios[key] !== undefined && userRatios[key] !== undefined) {
-      const diff = (celebRatios[key] - userRatios[key]) * 1.5;
+      const scale = (key === 'mouthCornerTilt' || key === 'mouthOpenRatio') ? 2.0 : 1.2;
+      const diff = (celebRatios[key] - userRatios[key]) * scale;
       exprRatioDiffSum += diff * diff;
       exprRatioCount++;
     }
   }
   const exprRatioDistance = exprRatioCount > 0 ? Math.sqrt(exprRatioDiffSum / exprRatioCount) : bsDistance;
-  const expressionDistance = Math.min(1.0, bsDistance * 0.7 + exprRatioDistance * 0.3);
+  const expressionDistance = Math.min(1.0, bsDistance * 0.65 + exprRatioDistance * 0.35);
 
   // 2. Stable Facial Appearance Features Distance (35%)
   let appDiffSum = 0;
   let appCount = 0;
   const appKeys = ['faceAspectRatio', 'eyeSpacingRatio', 'noseWidthRatio', 'noseHeightRatio', 'mouthWidthRatio', 'chinRatio', 'jawWidthRatio'];
-  
+
   for (const key of appKeys) {
     const target = celebApp[key] ?? celebRatios[key];
     const actual = userApp[key] ?? userRatios[key];
     if (target !== undefined && actual !== undefined) {
-      const diff = (target - actual) * 1.6;
+      const diff = (target - actual) * 1.5;
       appDiffSum += diff * diff;
       appCount++;
     }
@@ -4894,9 +4926,14 @@ export function calculateCelebrityDistance(userFeatures, celeb) {
  *
  * @param {object} userFeatures - Extracted facial features
  * @param {object|string[]|string} options - { collection, excludeIds }
- * @returns {object} The single closest celebrity match
+ * @returns {object|null} The single closest celebrity match, or null if features are invalid
  */
 export function findClosestCelebrity(userFeatures, options = {}) {
+  // If no face features are present, return null — NEVER return a hardcoded fallback celebrity!
+  if (!userFeatures) {
+    return null;
+  }
+
   // Normalize parameters
   let collection = 'all';
   let excludeIds = [];
@@ -4910,7 +4947,7 @@ export function findClosestCelebrity(userFeatures, options = {}) {
     excludeIds = options.excludeIds || [];
   }
 
-  // Unified search by default across all 75 reference photographs
+  // Unified search by default across all reference photographs
   let candidatePool = CELEBRITY_DATABASE;
   if (collection === 'female') {
     candidatePool = FEMALE_CELEBRITIES;
@@ -4918,8 +4955,8 @@ export function findClosestCelebrity(userFeatures, options = {}) {
     candidatePool = MALE_CELEBRITIES;
   }
 
-  if (!userFeatures) {
-    return candidatePool[0] || CELEBRITY_DATABASE[0];
+  if (!candidatePool || candidatePool.length === 0) {
+    return null;
   }
 
   // Calculate distance for all candidates
@@ -4928,7 +4965,12 @@ export function findClosestCelebrity(userFeatures, options = {}) {
       celeb,
       distance: calculateCelebrityDistance(userFeatures, celeb),
     }))
+    .filter((item) => Number.isFinite(item.distance))
     .sort((a, b) => a.distance - b.distance);
+
+  if (scored.length === 0) {
+    return null;
+  }
 
   // If exclusions exist (e.g. for group match diversity), pick best non-excluded candidate
   if (excludeIds && excludeIds.length > 0) {
@@ -4938,7 +4980,7 @@ export function findClosestCelebrity(userFeatures, options = {}) {
     }
   }
 
-  return scored[0]?.celeb || candidatePool[0] || CELEBRITY_DATABASE[0];
+  return scored[0]?.celeb || null;
 }
 
 /**
@@ -4962,11 +5004,13 @@ export function matchGroupParticipants(participants, options = {}) {
       collection: participantCollection,
       excludeIds: assignedCelebIds,
     });
-    assignedCelebIds.push(match.id);
-    results.push({
-      ...participant,
-      celebrity: match,
-    });
+    if (match) {
+      assignedCelebIds.push(match.id);
+      results.push({
+        ...participant,
+        celebrity: match,
+      });
+    }
   }
 
   return results;

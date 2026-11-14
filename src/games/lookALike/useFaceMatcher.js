@@ -296,9 +296,8 @@ export function useFaceMatcher({
           // If landmarker is still loading, clear HUD
           const ctx = canvas.getContext('2d');
           if (ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
-          // Set detected true so user can still test in mock environment
-          setFaceDetected(true);
-          setDetectedCount(1);
+          setFaceDetected(false);
+          setDetectedCount(0);
         }
       }
 
@@ -324,7 +323,7 @@ export function useFaceMatcher({
     setMatcherError(null);
 
     const video = videoRef.current;
-    const result = latestResultRef.current;
+    const landmarker = landmarkerRef.current;
 
     // Snapshot canvas — freeze exactly ONE valid frame
     const hasVideo = video && video.readyState >= 2 && video.videoWidth > 0;
@@ -353,6 +352,21 @@ export function useFaceMatcher({
 
     const fullFrameDataUrl = snapCanvas.toDataURL('image/jpeg', 0.9);
 
+    // Run fresh synchronous detection on the frozen video frame to guarantee current landmark accuracy
+    let freshResult = null;
+    if (landmarker && hasVideo) {
+      try {
+        const timestamp = performance.now();
+        const safeTimestamp = Math.max(timestamp, (lastVideoTimeRef.current || 0) + 1);
+        lastVideoTimeRef.current = safeTimestamp;
+        freshResult = landmarker.detectForVideo(video, safeTimestamp);
+      } catch (err) {
+        console.debug('[LookALike] Fresh capture frame detection threw:', err);
+      }
+    }
+
+    const result = (freshResult?.faceLandmarks?.length > 0) ? freshResult : latestResultRef.current;
+
     let croppedPhotoUrl = fullFrameDataUrl;
     let userFeatures = null;
     let detectedFaces = [];
@@ -364,10 +378,24 @@ export function useFaceMatcher({
           croppedPhotoUrl = cropFaceToDataUrl(video, userFeatures.boundingBox, 420) || fullFrameDataUrl;
         }
       }
+
+      if (!userFeatures) {
+        setMatcherError('No face detected in the captured photo. Please center your face under good lighting and try again.');
+        setWorkflowState(MATCHER_STATE.ERROR);
+        setIsAnalyzing(false);
+        return;
+      }
+
       capturedFeaturesRef.current = userFeatures;
       setFrozenParticipantPhoto(croppedPhotoUrl);
     } else {
       detectedFaces = result ? extractAllDetectedFaces(result) : [];
+      if (!detectedFaces || detectedFaces.length === 0) {
+        setMatcherError('No faces detected in the group photo. Please ensure all participants face the camera and try again.');
+        setWorkflowState(MATCHER_STATE.ERROR);
+        setIsAnalyzing(false);
+        return;
+      }
       capturedFeaturesRef.current = detectedFaces;
       setFrozenParticipantPhoto(fullFrameDataUrl);
     }
@@ -384,6 +412,9 @@ export function useFaceMatcher({
       const matchPromise = (async () => {
         if (mode === 'solo') {
           const matchedCeleb = findClosestCelebrity(userFeatures, { collection: selectedCollection });
+          if (!matchedCeleb) {
+            throw new Error(`No matching celebrity found in the ${selectedCollection} collection. Please try again.`);
+          }
           const composite = await generateSoloComposite(croppedPhotoUrl, matchedCeleb);
           return {
             solo: { participantPhoto: croppedPhotoUrl, celebrity: matchedCeleb },
@@ -391,36 +422,20 @@ export function useFaceMatcher({
           };
         } else {
           const participants = [];
-          if (detectedFaces.length > 0) {
-            detectedFaces.forEach((face, idx) => {
-              let croppedUrl = fullFrameDataUrl;
-              if (hasVideo && face.boundingBox) {
-                croppedUrl = cropFaceToDataUrl(video, face.boundingBox, 360) || fullFrameDataUrl;
-              }
-              const pIndex = idx + 1;
-              participants.push({
-                participantIndex: pIndex,
-                features: face,
-                imageUri: croppedUrl,
-                collection: participantCollections[pIndex] || selectedCollection,
-              });
+          detectedFaces.forEach((face, idx) => {
+            let croppedUrl = fullFrameDataUrl;
+            if (hasVideo && face.boundingBox) {
+              croppedUrl = cropFaceToDataUrl(video, face.boundingBox, 360) || fullFrameDataUrl;
+            }
+            const pIndex = idx + 1;
+            participants.push({
+              participantIndex: pIndex,
+              features: face,
+              imageUri: croppedUrl,
+              collection: participantCollections[pIndex] || selectedCollection,
             });
-          } else {
-            participants.push(
-              {
-                participantIndex: 1,
-                features: { blendshapes: { mouthSmileLeft: 0.9, mouthSmileRight: 0.9 } },
-                imageUri: fullFrameDataUrl,
-                collection: participantCollections[1] || selectedCollection,
-              },
-              {
-                participantIndex: 2,
-                features: { blendshapes: { eyeWideLeft: 0.9, jawOpen: 0.6 } },
-                imageUri: fullFrameDataUrl,
-                collection: participantCollections[2] || selectedCollection,
-              },
-            );
-          }
+          });
+
           const matchedGroup = matchGroupParticipants(participants, { collection: selectedCollection });
           const composite = await generateGroupComposite(matchedGroup);
           return {
@@ -497,8 +512,10 @@ export function useFaceMatcher({
   }, []);
 
   const resetToCamera = useCallback(() => {
-    // Invalidate any pending capture responses
+    // Invalidate any pending capture responses and clear stale detection frames
     captureIdRef.current = null;
+    latestResultRef.current = null;
+    capturedFeaturesRef.current = null;
     cancelCountdown();
     setGameState('camera');
     setSoloMatch(null);
