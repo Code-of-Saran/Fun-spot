@@ -1,0 +1,539 @@
+{
+  "name": "FunSpot Face Off Expression Match Dataset",
+  "version": "1.0.0",
+  "description": "Evaluation and calibration dataset containing paired target reference expressions and participant imitation attempts with ground truth human similarity ratings [0-100].",
+  "feature_spec": {
+    "blendshape_dimensions": 52,
+    "blendshape_standard": "ARKit / MediaPipe Face Landmarker 52 Blendshapes",
+    "geometric_metrics": [
+      "mouthOpenRatio",
+      "mouthWidthRatio",
+      "eyeOpenRatio",
+      "browRaiseRatio",
+      "mouthCornerTilt"
+    ],
+    "pose_dimensions": 3,
+    "normalization": "Scale-invariant relative to inter-ocular distance (IOD = ||P_leftEye - P_rightEye||)"
+  },
+  "score_tiers": {
+    "flawless": [90, 100],
+    "great": [75, 89],
+    "good": [60, 74],
+    "fair": [40, 59],
+    "retry": [0, 39]
+  },
+  "samples": [
+    {
+      "id": "sample_001_surprise_perfect",
+      "challenge_id": "extreme_surprise",
+      "pair_type": "exact_match",
+      "human_rating": 96.0,
+      "target": {
+        "blendshapes": {
+          "jawOpen": 0.88,
+          "browInnerUp": 0.82,
+          "eyeWideLeft": 0.78,
+          "eyeWideRight": 0.78,
+          "mouthFunnel": 0.40,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.65,
+          "mouthWidthRatio": 0.62,
+          "eyeOpenRatio": 0.28,
+          "browRaiseRatio": 0.38,
+          "mouthCornerTilt": 0.02
+        },
+        "headPose": { "pitch": 0.02, "yaw": 0.01, "roll": 0.00 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "jawOpen": 0.85,
+          "browInnerUp": 0.80,
+          "eyeWideLeft": 0.75,
+          "eyeWideRight": 0.76,
+          "mouthFunnel": 0.38,
+          "_neutral": 0.06
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.63,
+          "mouthWidthRatio": 0.61,
+          "eyeOpenRatio": 0.27,
+          "browRaiseRatio": 0.37,
+          "mouthCornerTilt": 0.03
+        },
+        "headPose": { "pitch": 0.03, "yaw": 0.02, "roll": 0.01 }
+      }
+    },
+    {
+      "id": "sample_002_surprise_mirror",
+      "challenge_id": "extreme_surprise",
+      "pair_type": "mirror_mimic",
+      "human_rating": 93.0,
+      "target": {
+        "blendshapes": {
+          "jawOpen": 0.85,
+          "browInnerUp": 0.80,
+          "eyeWideLeft": 0.82,
+          "eyeWideRight": 0.70,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.62,
+          "mouthWidthRatio": 0.60,
+          "leftEyeOpenRatio": 0.30,
+          "rightEyeOpenRatio": 0.24,
+          "eyeOpenRatio": 0.27,
+          "browRaiseRatio": 0.36,
+          "mouthCornerTilt": 0.01
+        },
+        "headPose": { "pitch": 0.01, "yaw": -0.05, "roll": -0.02 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "jawOpen": 0.84,
+          "browInnerUp": 0.79,
+          "eyeWideLeft": 0.70,
+          "eyeWideRight": 0.82,
+          "_neutral": 0.06
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.61,
+          "mouthWidthRatio": 0.60,
+          "leftEyeOpenRatio": 0.24,
+          "rightEyeOpenRatio": 0.30,
+          "eyeOpenRatio": 0.27,
+          "browRaiseRatio": 0.36,
+          "mouthCornerTilt": -0.01
+        },
+        "headPose": { "pitch": 0.01, "yaw": 0.05, "roll": 0.02 }
+      }
+    },
+    {
+      "id": "sample_003_surprise_vs_smile",
+      "challenge_id": "extreme_surprise",
+      "pair_type": "opposing_expression",
+      "human_rating": 14.0,
+      "target": {
+        "blendshapes": {
+          "jawOpen": 0.88,
+          "browInnerUp": 0.82,
+          "eyeWideLeft": 0.78,
+          "eyeWideRight": 0.78,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.65,
+          "mouthWidthRatio": 0.62,
+          "eyeOpenRatio": 0.28,
+          "browRaiseRatio": 0.38,
+          "mouthCornerTilt": 0.02
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "mouthSmileLeft": 0.88,
+          "mouthSmileRight": 0.88,
+          "cheekSquintLeft": 0.70,
+          "cheekSquintRight": 0.70,
+          "jawOpen": 0.08,
+          "browInnerUp": 0.04,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.15,
+          "mouthWidthRatio": 0.85,
+          "eyeOpenRatio": 0.12,
+          "browRaiseRatio": 0.18,
+          "mouthCornerTilt": 0.32
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      }
+    },
+    {
+      "id": "sample_004_side_eye_direct",
+      "challenge_id": "suspicious_side_eye",
+      "pair_type": "exact_match",
+      "human_rating": 89.0,
+      "target": {
+        "blendshapes": {
+          "eyeLookOutRight": 0.85,
+          "eyeLookInLeft": 0.85,
+          "eyeSquintLeft": 0.60,
+          "eyeSquintRight": 0.60,
+          "browDownRight": 0.40,
+          "_neutral": 0.10
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.10,
+          "mouthWidthRatio": 0.58,
+          "eyeOpenRatio": 0.12,
+          "browRaiseRatio": 0.19,
+          "mouthCornerTilt": 0.00
+        },
+        "headPose": { "pitch": -0.05, "yaw": 0.15, "roll": 0.02 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "eyeLookOutRight": 0.80,
+          "eyeLookInLeft": 0.80,
+          "eyeSquintLeft": 0.55,
+          "eyeSquintRight": 0.58,
+          "browDownRight": 0.35,
+          "_neutral": 0.12
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.11,
+          "mouthWidthRatio": 0.57,
+          "eyeOpenRatio": 0.13,
+          "browRaiseRatio": 0.20,
+          "mouthCornerTilt": 0.01
+        },
+        "headPose": { "pitch": -0.04, "yaw": 0.14, "roll": 0.01 }
+      }
+    },
+    {
+      "id": "sample_005_side_eye_mirrored",
+      "challenge_id": "suspicious_side_eye",
+      "pair_type": "mirror_mimic",
+      "human_rating": 88.0,
+      "target": {
+        "blendshapes": {
+          "eyeLookOutRight": 0.85,
+          "eyeLookInLeft": 0.85,
+          "eyeSquintLeft": 0.60,
+          "eyeSquintRight": 0.60,
+          "browDownRight": 0.40,
+          "_neutral": 0.10
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.10,
+          "mouthWidthRatio": 0.58,
+          "leftEyeOpenRatio": 0.12,
+          "rightEyeOpenRatio": 0.12,
+          "eyeOpenRatio": 0.12,
+          "browRaiseRatio": 0.19,
+          "mouthCornerTilt": 0.00
+        },
+        "headPose": { "pitch": -0.05, "yaw": 0.15, "roll": 0.02 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "eyeLookOutLeft": 0.82,
+          "eyeLookInRight": 0.82,
+          "eyeSquintRight": 0.56,
+          "eyeSquintLeft": 0.59,
+          "browDownLeft": 0.38,
+          "_neutral": 0.11
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.11,
+          "mouthWidthRatio": 0.57,
+          "leftEyeOpenRatio": 0.12,
+          "rightEyeOpenRatio": 0.12,
+          "eyeOpenRatio": 0.12,
+          "browRaiseRatio": 0.20,
+          "mouthCornerTilt": -0.01
+        },
+        "headPose": { "pitch": -0.04, "yaw": -0.14, "roll": -0.01 }
+      }
+    },
+    {
+      "id": "sample_006_anger_strong",
+      "challenge_id": "anger_frustration",
+      "pair_type": "exact_match",
+      "human_rating": 94.0,
+      "target": {
+        "blendshapes": {
+          "browDownLeft": 0.90,
+          "browDownRight": 0.90,
+          "noseSneerLeft": 0.70,
+          "noseSneerRight": 0.70,
+          "mouthPressLeft": 0.55,
+          "mouthPressRight": 0.55,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.06,
+          "mouthWidthRatio": 0.54,
+          "eyeOpenRatio": 0.13,
+          "browRaiseRatio": 0.12,
+          "mouthCornerTilt": -0.10
+        },
+        "headPose": { "pitch": -0.08, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "browDownLeft": 0.85,
+          "browDownRight": 0.87,
+          "noseSneerLeft": 0.65,
+          "noseSneerRight": 0.68,
+          "mouthPressLeft": 0.50,
+          "mouthPressRight": 0.52,
+          "_neutral": 0.06
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.07,
+          "mouthWidthRatio": 0.55,
+          "eyeOpenRatio": 0.14,
+          "browRaiseRatio": 0.13,
+          "mouthCornerTilt": -0.09
+        },
+        "headPose": { "pitch": -0.07, "yaw": 0.01, "roll": 0.0 }
+      }
+    },
+    {
+      "id": "sample_007_anger_vs_sadness",
+      "challenge_id": "anger_frustration",
+      "pair_type": "opposing_expression",
+      "human_rating": 26.0,
+      "target": {
+        "blendshapes": {
+          "browDownLeft": 0.90,
+          "browDownRight": 0.90,
+          "noseSneerLeft": 0.70,
+          "noseSneerRight": 0.70,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.06,
+          "mouthWidthRatio": 0.54,
+          "eyeOpenRatio": 0.13,
+          "browRaiseRatio": 0.12,
+          "mouthCornerTilt": -0.10
+        },
+        "headPose": { "pitch": -0.08, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "browInnerUp": 0.85,
+          "mouthFrownLeft": 0.80,
+          "mouthFrownRight": 0.80,
+          "mouthShrugLower": 0.65,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.12,
+          "mouthWidthRatio": 0.52,
+          "eyeOpenRatio": 0.16,
+          "browRaiseRatio": 0.35,
+          "mouthCornerTilt": -0.28
+        },
+        "headPose": { "pitch": 0.05, "yaw": 0.0, "roll": 0.0 }
+      }
+    },
+    {
+      "id": "sample_008_rock_brow_disbelief",
+      "challenge_id": "raised_eyebrow_disbelief",
+      "pair_type": "exact_match",
+      "human_rating": 91.0,
+      "target": {
+        "blendshapes": {
+          "browOuterUpRight": 0.92,
+          "browDownLeft": 0.65,
+          "eyeWideRight": 0.60,
+          "eyeSquintLeft": 0.50,
+          "_neutral": 0.08
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.08,
+          "mouthWidthRatio": 0.56,
+          "leftBrowRaiseRatio": 0.16,
+          "rightBrowRaiseRatio": 0.38,
+          "browRaiseRatio": 0.27,
+          "eyeOpenRatio": 0.18,
+          "mouthCornerTilt": 0.05
+        },
+        "headPose": { "pitch": 0.04, "yaw": -0.06, "roll": 0.08 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "browOuterUpRight": 0.88,
+          "browDownLeft": 0.60,
+          "eyeWideRight": 0.58,
+          "eyeSquintLeft": 0.46,
+          "_neutral": 0.09
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.09,
+          "mouthWidthRatio": 0.55,
+          "leftBrowRaiseRatio": 0.17,
+          "rightBrowRaiseRatio": 0.36,
+          "browRaiseRatio": 0.26,
+          "eyeOpenRatio": 0.17,
+          "mouthCornerTilt": 0.04
+        },
+        "headPose": { "pitch": 0.03, "yaw": -0.05, "roll": 0.07 }
+      }
+    },
+    {
+      "id": "sample_009_rock_brow_mirrored",
+      "challenge_id": "raised_eyebrow_disbelief",
+      "pair_type": "mirror_mimic",
+      "human_rating": 90.0,
+      "target": {
+        "blendshapes": {
+          "browOuterUpRight": 0.92,
+          "browDownLeft": 0.65,
+          "eyeWideRight": 0.60,
+          "eyeSquintLeft": 0.50,
+          "_neutral": 0.08
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.08,
+          "mouthWidthRatio": 0.56,
+          "leftBrowRaiseRatio": 0.16,
+          "rightBrowRaiseRatio": 0.38,
+          "browRaiseRatio": 0.27,
+          "eyeOpenRatio": 0.18,
+          "mouthCornerTilt": 0.05
+        },
+        "headPose": { "pitch": 0.04, "yaw": -0.06, "roll": 0.08 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "browOuterUpLeft": 0.89,
+          "browDownRight": 0.62,
+          "eyeWideLeft": 0.57,
+          "eyeSquintRight": 0.48,
+          "_neutral": 0.09
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.09,
+          "mouthWidthRatio": 0.55,
+          "leftBrowRaiseRatio": 0.36,
+          "rightBrowRaiseRatio": 0.17,
+          "browRaiseRatio": 0.26,
+          "eyeOpenRatio": 0.17,
+          "mouthCornerTilt": -0.04
+        },
+        "headPose": { "pitch": 0.03, "yaw": 0.05, "roll": -0.07 }
+      }
+    },
+    {
+      "id": "sample_010_neutral_face",
+      "challenge_id": "wide_eyed_excitement",
+      "pair_type": "neutral",
+      "human_rating": 18.0,
+      "target": {
+        "blendshapes": {
+          "mouthSmileLeft": 0.90,
+          "mouthSmileRight": 0.90,
+          "eyeWideLeft": 0.70,
+          "eyeWideRight": 0.70,
+          "cheekSquintLeft": 0.65,
+          "cheekSquintRight": 0.65,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.42,
+          "mouthWidthRatio": 0.78,
+          "eyeOpenRatio": 0.26,
+          "browRaiseRatio": 0.29,
+          "mouthCornerTilt": 0.24
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "_neutral": 0.88,
+          "mouthSmileLeft": 0.03,
+          "mouthSmileRight": 0.03,
+          "eyeWideLeft": 0.02,
+          "eyeWideRight": 0.02,
+          "browInnerUp": 0.04,
+          "jawOpen": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.08,
+          "mouthWidthRatio": 0.54,
+          "eyeOpenRatio": 0.17,
+          "browRaiseRatio": 0.22,
+          "mouthCornerTilt": 0.00
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      }
+    },
+    {
+      "id": "sample_011_pursed_lip_mimic",
+      "challenge_id": "pursed_lip_reaction",
+      "pair_type": "exact_match",
+      "human_rating": 86.0,
+      "target": {
+        "blendshapes": {
+          "mouthPucker": 0.85,
+          "mouthFunnel": 0.60,
+          "mouthRollUpper": 0.45,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.18,
+          "mouthWidthRatio": 0.38,
+          "eyeOpenRatio": 0.17,
+          "browRaiseRatio": 0.23,
+          "mouthCornerTilt": 0.01
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "mouthPucker": 0.80,
+          "mouthFunnel": 0.55,
+          "mouthRollUpper": 0.40,
+          "_neutral": 0.07
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.19,
+          "mouthWidthRatio": 0.40,
+          "eyeOpenRatio": 0.16,
+          "browRaiseRatio": 0.22,
+          "mouthCornerTilt": 0.00
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      }
+    },
+    {
+      "id": "sample_012_trying_not_to_laugh_partial",
+      "challenge_id": "trying_not_to_laugh",
+      "pair_type": "partial_mimic",
+      "human_rating": 64.0,
+      "target": {
+        "blendshapes": {
+          "mouthPressLeft": 0.80,
+          "mouthPressRight": 0.80,
+          "cheekPuff": 0.70,
+          "eyeSquintLeft": 0.70,
+          "eyeSquintRight": 0.70,
+          "_neutral": 0.05
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.05,
+          "mouthWidthRatio": 0.62,
+          "eyeOpenRatio": 0.10,
+          "browRaiseRatio": 0.20,
+          "mouthCornerTilt": 0.08
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      },
+      "candidate": {
+        "blendshapes": {
+          "mouthPressLeft": 0.45,
+          "mouthPressRight": 0.40,
+          "cheekPuff": 0.30,
+          "eyeSquintLeft": 0.38,
+          "eyeSquintRight": 0.40,
+          "_neutral": 0.45
+        },
+        "ratios": {
+          "mouthOpenRatio": 0.09,
+          "mouthWidthRatio": 0.58,
+          "eyeOpenRatio": 0.14,
+          "browRaiseRatio": 0.21,
+          "mouthCornerTilt": 0.04
+        },
+        "headPose": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+      }
+    }
+  ]
+}

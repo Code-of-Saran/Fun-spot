@@ -1,0 +1,685 @@
+# FUN SPOT — PHASE 1 IMPLEMENTATION
+
+You are working on my college project expo project named **“Fun Spot”**.
+
+## PROJECT CONCEPT
+
+Fun Spot is an interactive AI-powered entertainment arcade containing exactly four game modes:
+
+1. 🎲 Random
+2. 🪞 AI Mirror
+3. 😂 Don't Laugh
+4. ❌ Wrong Answers Only!!
+
+For this task, implement **PHASE 1 ONLY**.
+
+Do **NOT** implement the actual gameplay logic of Phase 2, Phase 3, Phase 4, or Phase 5.
+
+---
+
+# PHASE 1 GOAL
+
+Build the complete **foundation, landing page, visual design system, routing structure, reusable components, and future-ready architecture** for the Fun Spot project.
+
+I already have:
+
+* a **landing page template/reference image** that I want you to reproduce
+* a **custom background image created by me**
+
+The attached/reference image is the **primary visual reference** for the landing page layout.
+
+## VERY IMPORTANT VISUAL REQUIREMENT
+
+Use the **attached landing-page image as the reference and recreate its layout, composition, spacing, positioning, proportions, and overall visual hierarchy as closely as practical.**
+
+Do NOT replace the design with a generic AI-generated landing page.
+
+My custom background image must be used as the actual landing-page background.
+
+### Background requirements
+
+* Use my supplied background image.
+* Do not replace it with another stock image.
+* Do not redesign or redraw it.
+* Keep its visual identity intact.
+* Use proper `background-size`, `background-position`, overlays, and responsive handling so the background remains attractive across screen sizes.
+* Do not allow important UI text/cards to become unreadable because of the background.
+
+---
+
+# VISUAL STYLE
+
+The overall UI must follow a **modern cyberpunk arcade aesthetic** while still respecting the exact layout/reference image I supplied.
+
+Use a visual language such as:
+
+* dark futuristic interface
+* neon cyan
+* electric purple
+* magenta/pink accents
+* subtle blue highlights
+* glassmorphism
+* glowing borders
+* soft neon shadows
+* futuristic buttons
+* thin HUD-style lines
+* subtle grid/scanline effects
+* futuristic typography
+* animated hover states
+* subtle particles or glow effects where appropriate
+* strong contrast
+* polished arcade/game-show feeling
+
+Do NOT make it look childish or like a basic school project.
+
+It should feel like a **real interactive gaming website shown at a technology expo**.
+
+Avoid excessive visual clutter.
+
+The cyberpunk effects must support the reference layout rather than destroy it.
+
+---
+
+# FIRST STEP — INSPECT BEFORE MODIFYING
+
+Before writing or changing code:
+
+1. Inspect the entire existing project structure.
+2. Identify the frontend framework and current entry points.
+3. Identify the existing landing page implementation, if present.
+4. Identify where my background/reference assets are stored.
+5. Check existing dependencies.
+6. Check whether routing already exists.
+7. Do not unnecessarily replace the existing project setup.
+8. Reuse existing components/code when they are clean and useful.
+9. Avoid deleting working files unless absolutely necessary.
+
+After inspection, explain internally what needs to be changed and then implement Phase 1.
+
+---
+
+# REQUIRED TECH STACK
+
+Prefer the current project stack if already established.
+
+Expected frontend stack:
+
+* React
+* Vite
+* JavaScript
+* React Router if routing is not already implemented
+* CSS / existing styling system
+* Framer Motion only if useful and already compatible
+
+Do not introduce unnecessary frameworks.
+
+Do not add a backend yet unless the existing project already requires one for the current foundation.
+
+---
+
+# LANDING PAGE
+
+Create the main **Fun Spot** landing page based on my attached reference.
+
+The landing page must communicate:
+
+**FUN SPOT**
+
+Suggested tagline:
+
+**“Bored? Let's fix that.”**
+
+The page must contain four game-mode cards:
+
+### 🎲 RANDOM
+
+Description:
+“Random challenges. No idea what comes next.”
+
+### 🪞 AI MIRROR
+
+Description:
+“Who will you become?”
+
+### 😂 DON'T LAUGH
+
+Description:
+“Try not to laugh.”
+
+### ❌ WRONG ANSWERS ONLY!!
+
+Description:
+“Creativity beats correctness.”
+
+The exact wording can be refined to match the visual space, but preserve the meaning.
+
+Each card must have:
+
+* icon
+* game name
+* short description
+* PLAY button or clear interactive action
+* hover animation
+* neon/cyberpunk styling
+* visual hierarchy consistent with the attached reference
+
+---
+
+# LANDING PAGE INTERACTION
+
+Each game card must navigate to its own route.
+
+Create these routes:
+
+`/`
+
+`/random`
+
+`/mirror`
+
+`/dont-laugh`
+
+`/wrong-answers`
+
+Also create:
+
+`/leaderboards`
+
+The actual game functionality does NOT need to exist yet.
+
+For now, each future game page should be a clean placeholder page that clearly shows:
+
+* game title
+* short description
+* “Phase X coming next” or a similarly polished placeholder message
+* BACK HOME button
+
+Do not implement gameplay in these pages.
+
+---
+
+# LEADERBOARD FOUNDATION
+
+There are only TWO competitive leaderboards in the final project:
+
+### Random
+
+`/leaderboards/random`
+
+### Wrong Answers
+
+`/leaderboards/wrong-answers`
+
+AI Mirror and Don't Laugh DO NOT have leaderboards.
+
+Create the routing and reusable leaderboard UI foundation now, but do not build the real scoring/database functionality yet.
+
+Create reusable components such as:
+
+* `Leaderboard`
+* `LeaderboardRow`
+* `LeaderboardTabs` or another clean selector
+* empty-state design
+
+The leaderboard should be prepared for future backend integration.
+
+Use mock data only for the UI.
+
+---
+
+# PROJECT ARCHITECTURE
+
+Create a clean, scalable architecture that will support Phases 2–5.
+
+Preferred structure:
+
+```text
+src/
+├── components/
+│   ├── layout/
+│   ├── common/
+│   ├── game/
+│   └── leaderboard/
+│
+├── pages/
+│   ├── Landing.jsx
+│   ├── RandomGame.jsx
+│   ├── AIMirror.jsx
+│   ├── DontLaugh.jsx
+│   ├── WrongAnswers.jsx
+│   └── Leaderboards.jsx
+│
+├── games/
+│   ├── random/
+│   ├── mirror/
+│   ├── dontLaugh/
+│   └── wrongAnswers/
+│
+├── services/
+├── data/
+├── hooks/
+├── utils/
+├── assets/
+├── styles/
+│
+├── App.jsx
+└── main.jsx
+```
+
+Adapt this structure to the existing project if a better structure already exists.
+
+Do not create dozens of unnecessary files.
+
+The architecture must make it easy to add each future game independently.
+
+---
+
+# REUSABLE COMPONENTS
+
+Create reusable components where appropriate.
+
+At minimum, establish:
+
+* `Navbar`
+* `GameCard`
+* `GameGrid`
+* `PageContainer`
+* `CyberButton`
+* `GameHeader`
+* `BackButton`
+* `LoadingScreen`
+* `ErrorScreen`
+* `Modal`
+* `Leaderboard`
+* `LeaderboardRow`
+* `Footer`
+
+Use reusable props rather than duplicating markup.
+
+---
+
+# UI DETAILS
+
+## Navbar
+
+Include:
+
+* Fun Spot branding/logo text
+* navigation where appropriate
+* leaderboard access
+* responsive mobile behavior
+
+## Hero
+
+Include:
+
+* strong FUN SPOT title
+* tagline
+* short one-line explanation
+* optional primary CTA
+* game grid below or beside it according to the reference image
+
+## Game cards
+
+Cards should feel interactive.
+
+On hover:
+
+* slight lift
+* neon border glow
+* subtle scale
+* icon movement/glow
+* animated light sweep if it does not hurt performance
+
+On click:
+
+* subtle press animation
+* navigate correctly
+
+## Background
+
+Use the supplied custom image.
+
+Add only subtle overlays/effects necessary for readability:
+
+* dark translucent layer
+* soft vignette
+* subtle cyberpunk glow
+* very light scanline/grid effect if visually appropriate
+
+Do NOT cover the background with an opaque block.
+
+---
+
+# ANIMATIONS
+
+Use animation carefully.
+
+Include:
+
+* page entrance animation
+* hero fade/slide
+* card stagger animation
+* hover effects
+* button interaction
+* route/page transition if practical
+
+Avoid:
+
+* constant heavy motion
+* distracting flashing
+* excessive particles
+* animations that reduce readability
+
+The website should feel alive, not chaotic.
+
+---
+
+# RESPONSIVENESS
+
+The project will be demonstrated on a desktop/laptop, but it must also handle:
+
+* 1920×1080
+* 1600×900
+* 1366×768
+* 1280×720
+* tablet
+* mobile widths
+
+Make sure:
+
+* cards never overlap
+* text never gets cut off
+* buttons remain accessible
+* background remains visually correct
+* navigation collapses appropriately
+* no horizontal scrolling unless intentionally required
+
+---
+
+# ACCESSIBILITY + UX
+
+Implement sensible accessibility:
+
+* keyboard-focusable buttons
+* visible focus states
+* sufficient text contrast
+* semantic buttons/links
+* alt text for important images
+* no interaction that depends only on hover
+
+The user should understand what to click without explanation.
+
+---
+
+# ERROR / LOADING FOUNDATION
+
+Create polished reusable:
+
+### Loading screen
+
+Example:
+
+`INITIALIZING FUN SPOT...`
+
+with cyberpunk animation.
+
+### Error screen
+
+Example:
+
+`SYSTEM ERROR`
+
+`Something went wrong.`
+
+`[ RETURN HOME ]`
+
+These are only reusable UI components for now.
+
+Do not build game-specific error logic.
+
+---
+
+# GAME MODE METADATA
+
+Create a central configuration file for the four game modes.
+
+Example:
+
+```javascript
+const gameModes = [
+  {
+    id: "random",
+    title: "RANDOM",
+    icon: "🎲",
+    description: "Random challenges. No idea what comes next.",
+    route: "/random"
+  },
+  {
+    id: "mirror",
+    title: "AI MIRROR",
+    icon: "🪞",
+    description: "Who will you become?",
+    route: "/mirror"
+  },
+  {
+    id: "dont-laugh",
+    title: "DON'T LAUGH",
+    icon: "😂",
+    description: "Try not to laugh.",
+    route: "/dont-laugh"
+  },
+  {
+    id: "wrong-answers",
+    title: "WRONG ANSWERS ONLY!!",
+    icon: "❌",
+    description: "Creativity beats correctness.",
+    route: "/wrong-answers"
+  }
+];
+```
+
+Use this configuration to generate the cards instead of hardcoding the same information multiple times.
+
+---
+
+# IMPORTANT FUTURE-PHASE ARCHITECTURE
+
+Prepare the project for these later phases without implementing them now.
+
+## PHASE 2
+
+🎲 Random
+
+Future functionality:
+
+* random challenge engine
+* webcam
+* MediaPipe Pose
+* MediaPipe Hands
+* challenge detection
+* scoring
+* Random leaderboard
+
+## PHASE 3
+
+🪞 AI Mirror
+
+Future functionality:
+
+* random category
+* random character
+* Anime / Cartoon / Indian-inspired character pool
+* face tracking
+* real-time AR-style overlays
+* capture
+
+## PHASE 4
+
+😂 Don't Laugh
+
+Future functionality:
+
+* funny image/content engine
+* webcam
+* face tracking
+* laugh detection
+* rolling frame buffer
+* exact laugh-moment capture
+* save captured image under:
+
+`backend/captures/dont-laugh/`
+
+No leaderboard.
+
+## PHASE 5
+
+❌ Wrong Answers Only!!
+
+Future functionality:
+
+* random prompts
+* participant text input
+* optional voice input
+* AI judging
+* creativity
+* humor
+* originality
+* relevance
+* score
+* Wrong Answers leaderboard
+
+Do NOT implement these features during Phase 1.
+
+---
+
+# DO NOT OVERBUILD
+
+For Phase 1:
+
+DO:
+
+* landing page
+* styling
+* navigation
+* reusable components
+* game placeholders
+* leaderboard UI foundation
+* project architecture
+* animations
+* responsive design
+* error/loading screens
+
+DO NOT:
+
+* build MediaPipe
+* build webcam detection
+* build AI Mirror effects
+* build laugh detection
+* build AI judging
+* build scoring algorithms
+* build Supabase/database logic
+* build actual Random challenges
+* build Wrong Answers gameplay
+* build Don't Laugh gameplay
+
+---
+
+# CODE QUALITY REQUIREMENTS
+
+Write production-quality, understandable code.
+
+Requirements:
+
+* componentized
+* modular
+* readable
+* no unnecessary duplication
+* no dead code
+* no fake functionality presented as complete
+* no hardcoded dimensions that break responsiveness
+* no console errors
+* no broken routes
+* no placeholder links that go nowhere
+
+Avoid giant monolithic components.
+
+Keep future game logic isolated from UI.
+
+---
+
+# ASSET HANDLING
+
+Use the assets I already provided.
+
+Do not download random internet images unless absolutely necessary.
+
+If the attached reference includes icons/visuals that are not available as assets, reproduce the visual effect with CSS or use appropriate open-source icons rather than replacing the entire design.
+
+Do not replace my custom background image.
+
+---
+
+# FINAL VALIDATION
+
+Before declaring Phase 1 complete:
+
+1. Run the application.
+2. Verify every route.
+3. Test every game card.
+4. Test desktop and responsive layouts.
+5. Check that the attached reference design has been followed closely.
+6. Check that my custom background appears correctly.
+7. Check all hover/click animations.
+8. Check keyboard navigation.
+9. Check that there are no console errors.
+10. Run a production build and fix all build errors.
+
+Use:
+
+```bash
+npm run dev
+```
+
+and a production build command appropriate for the existing project.
+
+If you encounter an error, fix it rather than leaving it unresolved.
+
+---
+
+# FINAL RESPONSE FORMAT
+
+After implementation, report:
+
+### 1. What you changed
+
+Short summary.
+
+### 2. Files created/modified
+
+List only important files.
+
+### 3. Routes created
+
+Show all routes.
+
+### 4. Dependencies added
+
+Only if any.
+
+### 5. Verification
+
+State whether:
+
+* development server works
+* production build works
+* console is clean
+* responsive layout was checked
+
+### 6. Phase 1 limitations
+
+Explicitly state that the actual gameplay of Phases 2–5 has NOT been implemented yet.
+
+Do not begin Phase 2 automatically.
+
+**Phase 1 is complete only when the Fun Spot landing page and project foundation are functional, polished, responsive, and stable.**

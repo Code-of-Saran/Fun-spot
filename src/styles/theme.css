@@ -1,0 +1,247 @@
+/* ---------- Design tokens: Futuristic Neon Arcade System ---------- */
+:root {
+  /* Base backgrounds: near-black and deep midnight blue */
+  --bg-deep: #020713;
+  --bg-dark: #040e24;
+  --bg-surface: #061330;
+  --bg-panel: rgba(4, 18, 42, 0.85);
+  --bg-panel-solid: #04122b;
+  --bg-card: rgba(5, 20, 48, 0.78);
+  --bg-card-hover: rgba(8, 28, 64, 0.92);
+
+  /* Primary & secondary neon accents */
+  --neon-cyan: #00f0ff;
+  --neon-cyan-rgb: 0, 240, 255;
+  --neon-purple: #8b3dff;
+  --neon-purple-rgb: 139, 61, 255;
+  --neon-magenta: #ff2bd6;
+  --neon-magenta-rgb: 255, 43, 214;
+  --neon-blue: #2f7bff;
+  --neon-blue-rgb: 47, 123, 255;
+  --neon-lime: #00e676;
+  --neon-gold: #ffd54f;
+
+  /* Typography & contrast colors */
+  --text: #f4f8ff;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Structural borders & neon glows */
+  --border-subtle: rgba(28, 64, 120, 0.45);
+  --border-neon: rgba(0, 240, 255, 0.5);
+  --glow-cyan-sm: 0 0 10px rgba(0, 240, 255, 0.45);
+  --glow-cyan-md: 0 0 20px rgba(0, 240, 255, 0.55), 0 0 40px rgba(0, 240, 255, 0.2);
+  --glow-purple-sm: 0 0 10px rgba(139, 61, 255, 0.45);
+  --glow-purple-md: 0 0 20px rgba(139, 61, 255, 0.55), 0 0 40px rgba(139, 61, 255, 0.2);
+  --glow-magenta-sm: 0 0 10px rgba(255, 43, 214, 0.45);
+  --glow-magenta-md: 0 0 20px rgba(255, 43, 214, 0.55), 0 0 40px rgba(255, 43, 214, 0.2);
+
+  /* Fonts */
+  --font-display: 'Luckiest Guy', Impact, system-ui, sans-serif;
+  --font-logo: 'Orbitron', 'Segoe UI', system-ui, sans-serif;
+  --font-nav: 'Federo', Georgia, serif;
+  --font-body: 'Rajdhani', 'Segoe UI', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --nav-height: 72px;
+}
+
+/* ---------- Neon accent families (applied per game mode) ---------- */
+.theme-cyan {
+  --accent: #00f0ff;
+  --accent-rgb: 0, 240, 255;
+  --card-core: rgb(2, 28, 54);
+  --card-edge: rgb(0, 100, 140);
+  --glow-accent: rgba(0, 240, 255, 0.5);
+}
+
+.theme-magenta {
+  --accent: #ff2bd6;
+  --accent-rgb: 255, 43, 214;
+  --card-core: rgb(48, 8, 56);
+  --card-edge: rgb(110, 15, 125);
+  --glow-accent: rgba(255, 43, 214, 0.5);
+}
+
+.theme-lime {
+  --accent: #00f0ff;
+  --accent-secondary: #ffd54f;
+  --accent-rgb: 0, 240, 255;
+  --card-core: rgb(15, 20, 52);
+  --card-edge: rgb(40, 60, 130);
+  --glow-accent: rgba(0, 240, 255, 0.5);
+}
+
+.theme-purple {
+  --accent: #8b3dff;
+  --accent-rgb: 139, 61, 255;
+  --card-core: rgb(28, 10, 58);
+  --card-edge: rgb(78, 25, 145);
+  --glow-accent: rgba(139, 61, 255, 0.5);
+}
+
+/* ==========================================================================
+   ARCADE HUD DESIGN SYSTEM — SHARED PANELS, BUTTONS & CORNERS
+   ========================================================================== */
+
+.arcade-panel {
+  position: relative;
+  background: rgba(6, 10, 24, 0.82);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.arcade-panel--cyan {
+  border: 1.5px solid #00f0ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.28), inset 0 0 16px rgba(0, 240, 255, 0.05);
+}
+
+.arcade-panel--magenta {
+  border: 1.5px solid #ff007a;
+  box-shadow: 0 0 20px rgba(255, 0, 122, 0.28), inset 0 0 16px rgba(255, 0, 122, 0.05);
+}
+
+.arcade-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.arcade-corner--tl {
+  top: 6px;
+  left: 6px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.arcade-corner--tr {
+  top: 6px;
+  right: 6px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.arcade-corner--bl {
+  bottom: 6px;
+  left: 6px;
+  border-bottom: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.arcade-corner--br {
+  bottom: 6px;
+  right: 6px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+/* 3D Stylized Arcade Typography (LOOK A LIKE) */
+.arcade-title-3d {
+  font-family: var(--font-logo), 'Impact', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow:
+    0 1px 0 #00f0ff,
+    0 2px 0 #00d2ff,
+    0 3px 0 #0099cc,
+    0 4px 0 #ff007a,
+    0 0 20px rgba(0, 240, 255, 0.8),
+    0 0 40px rgba(255, 0, 122, 0.5);
+  line-height: 1.1;
+}
+
+/* Arcade Buttons */
+.arcade-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  white-space: nowrap;
+}
+
+.arcade-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.arcade-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.arcade-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.arcade-btn--cyan {
+  background: linear-gradient(90deg, #00d2ff 0%, #00f0ff 100%);
+  color: #040814;
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.45);
+}
+
+.arcade-btn--cyan:hover:not(:disabled) {
+  box-shadow: 0 0 26px rgba(0, 240, 255, 0.8);
+  background: #ffffff;
+  color: #020713;
+}
+
+.arcade-btn--magenta {
+  background: linear-gradient(90deg, #ff007a 0%, #e026ff 100%);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(255, 0, 122, 0.45);
+}
+
+.arcade-btn--magenta:hover:not(:disabled) {
+  box-shadow: 0 0 26px rgba(255, 0, 122, 0.8);
+}
+
+.arcade-btn--amber {
+  background: linear-gradient(90deg, #ffb800 0%, #ffa000 100%);
+  color: #040814;
+  box-shadow: 0 0 16px rgba(255, 184, 0, 0.45);
+}
+
+.arcade-btn--amber:hover:not(:disabled) {
+  box-shadow: 0 0 26px rgba(255, 184, 0, 0.8);
+  background: #ffe082;
+}
+
+.arcade-btn--ghost {
+  background: rgba(6, 12, 28, 0.7);
+  border: 1.5px solid rgba(0, 240, 255, 0.4);
+  color: #ffffff;
+}
+
+.arcade-btn--ghost:hover:not(:disabled) {
+  border-color: #00f0ff;
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.35);
+  background: rgba(0, 240, 255, 0.12);
+}
+
+.arcade-btn--pill {
+  border-radius: 999px;
+  padding: 8px 18px;
+}
+

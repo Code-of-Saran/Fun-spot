@@ -1,0 +1,91 @@
+.cyber-btn {
+  --btn-accent: var(--accent, var(--neon-cyan));
+  --btn-accent-rgb: var(--accent-rgb, var(--neon-cyan-rgb));
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55em;
+  border: 2px solid var(--btn-accent);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.2s var(--ease-out),
+    box-shadow 0.25s var(--ease-out),
+    background-color 0.25s,
+    color 0.25s;
+}
+
+.cyber-btn--md {
+  padding: 0.8em 1.6em 0.65em;
+  font-size: 1.05rem;
+}
+.cyber-btn--sm {
+  padding: 0.65em 1.2em 0.5em;
+  font-size: 0.9rem;
+}
+
+.cyber-btn--primary {
+  background: rgba(var(--btn-accent-rgb), 0.16);
+  color: #fff;
+  box-shadow:
+    0 0 14px rgba(var(--btn-accent-rgb), 0.45),
+    inset 0 0 12px rgba(var(--btn-accent-rgb), 0.25);
+}
+
+.cyber-btn--ghost {
+  background: rgba(2, 8, 20, 0.7);
+  color: #fff;
+  box-shadow: 0 0 8px rgba(var(--btn-accent-rgb), 0.3);
+}
+
+/* light sweep */
+.cyber-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.6s var(--ease-out);
+}
+
+.cyber-btn:hover,
+.cyber-btn:focus-visible {
+  transform: translateY(-2px);
+  background-color: rgba(var(--btn-accent-rgb), 0.28);
+  box-shadow:
+    0 0 22px rgba(var(--btn-accent-rgb), 0.7),
+    inset 0 0 16px rgba(var(--btn-accent-rgb), 0.35);
+}
+
+.cyber-btn:hover::after,
+.cyber-btn:focus-visible::after {
+  transform: translateX(120%);
+}
+
+.cyber-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.cyber-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+  border-radius: var(--radius-pill);
+}
+
+.cyber-btn__icon {
+  display: inline-block;
+  transition: transform 0.25s var(--ease-out);
+}
+.cyber-btn:hover .cyber-btn__icon {
+  transform: translateX(3px);
+}

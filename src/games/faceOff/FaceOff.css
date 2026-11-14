@@ -1,0 +1,1662 @@
+/**
+ * FUN SPOT — FACE OFF: AI EXPRESSION MATCH
+ * Cyberpunk / Neon Theme Stylesheet
+ */
+
+.faceoff-root {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 20%, #0a1128 0%, #040714 60%, #020308 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: 'Rajdhani', -apple-system, sans-serif;
+  user-select: none;
+}
+
+/* Laptop Viewport Fit (1366x768, 1440x900, 1536x864, 1920x1080) */
+@media (min-width: 1024px) {
+  .faceoff-root {
+    min-height: 0;
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+  .faceoff-top-nav {
+    margin: 6px auto 2px;
+  }
+  .faceoff-main-stage {
+    flex: 1;
+    min-height: 0;
+    padding: 4px 18px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .faceoff-stage-grid {
+    flex: 1;
+    min-height: 0;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .faceoff-panel-card {
+    height: 100%;
+    min-height: 0;
+    padding: clamp(8px, 1.3vh, 16px);
+    gap: clamp(6px, 1vh, 10px);
+    justify-content: space-between;
+  }
+  .faceoff-target-media-frame {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    max-height: calc(100dvh - 360px);
+    aspect-ratio: 4 / 3;
+  }
+  .faceoff-video-container {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    max-height: calc(100dvh - 330px);
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.faceoff-top-nav {
+  margin: 10px auto 4px;
+}
+
+/* Target Expression Card Clean Display */
+.faceoff-target-clean-frame {
+  position: relative;
+  width: 100%;
+}
+
+/* Camera Disconnected Overlay (Matches Face off.jpeg) */
+.faceoff-cam-disconnected {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  z-index: 5;
+}
+
+.faceoff-cam-off-icon {
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  animation: faceoff-pulse-dot 2.5s infinite alternate;
+}
+
+.faceoff-cam-disconnected__title {
+  font-family: var(--font-logo), sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.faceoff-cam-disconnected__desc {
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   TOP HUD BAR
+   -------------------------------------------------------------------------- */
+
+.faceoff-hud-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: rgba(6, 10, 24, 0.85);
+  border-bottom: 1.5px solid rgba(0, 240, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 40;
+}
+
+.faceoff-hud-bar__left,
+.faceoff-hud-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faceoff-hud-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #00f0ff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
+
+.faceoff-hud-logo__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0055;
+  filter: drop-shadow(0 0 8px #ff0055);
+}
+
+.faceoff-round-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #00f0ff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.faceoff-round-pill__label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faceoff-round-pill__num {
+  color: #ffb800;
+}
+
+.faceoff-hud-sound-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #e0f7ff;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faceoff-hud-sound-btn:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: #00f0ff;
+  color: #00f0ff;
+}
+
+/* --------------------------------------------------------------------------
+   BUTTONS (CYBERPUNK)
+   -------------------------------------------------------------------------- */
+
+.faceoff-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.faceoff-btn--back {
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.faceoff-btn--back:hover {
+  background: rgba(255, 0, 85, 0.2);
+  border-color: #ff0055;
+  color: #ff0055;
+}
+
+.faceoff-btn--ghost {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  color: #e0f7ff;
+}
+
+.faceoff-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #00f0ff;
+  color: #00f0ff;
+}
+
+.faceoff-btn--cyan {
+  background: #00f0ff;
+  border: 1.5px solid #00f0ff;
+  color: #040814;
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.45);
+}
+
+.faceoff-btn--cyan:hover:not(:disabled) {
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.faceoff-btn--cyan:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.faceoff-btn--amber {
+  background: #ffb800;
+  border: 1.5px solid #ffb800;
+  color: #040814;
+  box-shadow: 0 0 16px rgba(255, 184, 0, 0.45);
+}
+
+.faceoff-btn--amber:hover:not(:disabled) {
+  background: #ffe082;
+  border-color: #ffe082;
+  box-shadow: 0 0 24px rgba(255, 184, 0, 0.8);
+  transform: translateY(-2px);
+}
+
+.faceoff-btn--start-challenge {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #00f0ff, #00d0ff);
+  border: 1.5px solid #00f0ff;
+  color: #040814;
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.5);
+  animation: faceoff-pulse-btn 2s infinite ease-in-out;
+}
+
+.faceoff-btn--start-challenge:hover:not(:disabled) {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #040814;
+  box-shadow: 0 0 32px rgba(0, 240, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.faceoff-btn--start-challenge:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  animation: none;
+  box-shadow: none;
+}
+
+@keyframes faceoff-pulse-btn {
+  0%, 100% {
+    box-shadow: 0 0 16px rgba(0, 240, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(0, 240, 255, 0.8);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ARENA LAYOUT (STAGE GRID)
+   -------------------------------------------------------------------------- */
+
+.faceoff-arena {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.faceoff-stage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   LEFT: TARGET EXPRESSION CARD
+   -------------------------------------------------------------------------- */
+
+.faceoff-panel-card {
+  background: rgba(8, 14, 30, 0.85);
+  border: 1.5px solid rgba(0, 240, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.faceoff-panel-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faceoff-panel-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  color: #00f0ff;
+  letter-spacing: 0.08em;
+}
+
+.faceoff-panel-diff {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 184, 0, 0.12);
+  border: 1px solid rgba(255, 184, 0, 0.4);
+  color: #ffb800;
+}
+
+.faceoff-target-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-target-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: #00f0ff;
+  margin-top: -0.4rem;
+}
+
+.faceoff-target-media-frame {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 240, 255, 0.4);
+  background: #02040a;
+}
+
+.faceoff-target-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #02040a;
+  display: block;
+}
+
+.faceoff-target-media-overlay {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  padding: 0.25rem 0.55rem;
+  background: rgba(4, 8, 18, 0.85);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #00f0ff;
+  z-index: 2;
+}
+
+.faceoff-reference-loading-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(3, 6, 16, 0.95);
+  color: #00f0ff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 20px;
+}
+
+.faceoff-reference-loading-card--error {
+  color: #ff4d6d;
+}
+
+.faceoff-ref-loading-text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.faceoff-reference-error-card {
+  background: rgba(255, 0, 85, 0.12);
+  border: 1px solid #ff0055;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faceoff-ref-err-text {
+  color: #ff6688;
+  font-size: 0.75rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.faceoff-ref-err-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.faceoff-target-instructions {
+  background: rgba(0, 240, 255, 0.05);
+  border-left: 3px solid #00f0ff;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.faceoff-inst-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #00f0ff;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.06em;
+}
+
+.faceoff-target-instructions p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.faceoff-target-humor {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.35;
+  margin-top: auto;
+}
+
+/* --------------------------------------------------------------------------
+   RIGHT: LIVE VIEWFINDER
+   -------------------------------------------------------------------------- */
+
+.faceoff-viewfinder-card {
+  background: rgba(8, 14, 30, 0.85);
+  border: 1.5px solid rgba(0, 255, 136, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.15);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.faceoff-viewfinder-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.faceoff-viewfinder-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.faceoff-live-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #00ff88;
+  letter-spacing: 0.08em;
+}
+
+.faceoff-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 8px #00ff88;
+  animation: faceoff-pulse-dot 1.5s infinite;
+}
+
+@keyframes faceoff-pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.faceoff-status-pill {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+.faceoff-status-pill--locked {
+  background: rgba(0, 255, 136, 0.15);
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  color: #00ff88;
+}
+
+.faceoff-status-pill--searching {
+  background: rgba(255, 184, 0, 0.15);
+  border: 1px solid rgba(255, 184, 0, 0.4);
+  color: #ffb800;
+}
+
+.faceoff-status-pill--loading {
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  color: #00f0ff;
+}
+
+.faceoff-video-container {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 255, 136, 0.4);
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faceoff-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* Mirror camera for natural selfie view */
+}
+
+.faceoff-viewfinder-footer {
+  margin-top: auto;
+}
+
+.faceoff-countdown-hint {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #00f0ff;
+  letter-spacing: 0.08em;
+  padding: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   COUNTDOWN OVERLAY & DIGITS
+   -------------------------------------------------------------------------- */
+
+.faceoff-countdown-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 7, 18, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.faceoff-countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.faceoff-countdown-digit {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: #00f0ff;
+  text-shadow: 0 0 30px rgba(0, 240, 255, 0.9), 0 0 60px rgba(0, 240, 255, 0.5);
+  animation: faceoff-pop-digit 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 1;
+}
+
+@keyframes faceoff-pop-digit {
+  0% { transform: scale(1.6); opacity: 0; }
+  40% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.9; }
+}
+
+.faceoff-countdown-prompt {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  text-align: center;
+  background: rgba(4, 8, 20, 0.85);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-tracking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.faceoff-tracking-badge--locked {
+  background: rgba(0, 255, 136, 0.85);
+  color: #040814;
+}
+
+.faceoff-tracking-badge--searching {
+  background: rgba(255, 184, 0, 0.85);
+  color: #040814;
+}
+
+.faceoff-tracking-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   EVALUATING SCAN OVERLAY
+   -------------------------------------------------------------------------- */
+
+.faceoff-eval-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 7, 20, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.faceoff-scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #00f0ff;
+  box-shadow: 0 0 16px #00f0ff;
+  animation: faceoff-scan-anim 1.2s infinite ease-in-out;
+}
+
+@keyframes faceoff-scan-anim {
+  0% { top: 10%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 90%; opacity: 0; }
+}
+
+.faceoff-eval-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #00f0ff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.8);
+}
+
+/* --------------------------------------------------------------------------
+   LOADING & ERROR OVERLAYS
+   -------------------------------------------------------------------------- */
+
+.faceoff-loading-overlay,
+.faceoff-error-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 7, 18, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  z-index: 20;
+}
+
+.faceoff-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 240, 255, 0.2);
+  border-top-color: #00f0ff;
+  border-radius: 50%;
+  animation: faceoff-spin 0.9s linear infinite;
+}
+
+@keyframes faceoff-spin {
+  to { transform: rotate(360deg); }
+}
+
+.faceoff-error-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ff0055;
+  letter-spacing: 0.06em;
+}
+
+.faceoff-error-msg {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  max-width: 440px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.faceoff-error-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.faceoff-loading-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #00f0ff;
+  letter-spacing: 0.08em;
+}
+
+.faceoff-loading-sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Non-blocking overlays for Face Detector */
+.faceoff-model-loading-chip {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(4, 8, 20, 0.85);
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  border-radius: 9999px;
+  padding: 0.35rem 0.85rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #00f0ff;
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.3);
+  z-index: 12;
+  pointer-events: none;
+}
+
+.faceoff-spinner-mini {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(0, 240, 255, 0.3);
+  border-top-color: #00f0ff;
+  border-radius: 50%;
+  animation: faceoff-spin 0.8s linear infinite;
+}
+
+.faceoff-model-error-badge {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: rgba(30, 8, 16, 0.92);
+  border: 1px solid rgba(255, 0, 85, 0.6);
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ff4070;
+  z-index: 15;
+}
+
+.faceoff-btn-retry-model {
+  background: #ff0055;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faceoff-btn-retry-model:hover {
+  background: #ff3377;
+}
+
+/* --------------------------------------------------------------------------
+   RESULT SCREEN (SIDE-BY-SIDE COMPARISON)
+   -------------------------------------------------------------------------- */
+
+.faceoff-result-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faceoff-result-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.faceoff-result-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #00f0ff;
+  letter-spacing: 0.1em;
+}
+
+.faceoff-result-challenge-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 0 16px rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-result-instructions {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+}
+
+.faceoff-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faceoff-card {
+  background: rgba(8, 14, 30, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.faceoff-card--reference {
+  border: 2px solid rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-card--captured {
+  border: 2px solid rgba(0, 255, 136, 0.4);
+}
+
+.faceoff-card__tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 0.9rem;
+  background: rgba(4, 7, 16, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.faceoff-card__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.faceoff-card__dot--cyan {
+  background: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+.faceoff-card__dot--green {
+  background: #00ff88;
+  box-shadow: 0 0 8px #00ff88;
+}
+
+.faceoff-card__media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background: #02040a;
+}
+
+.faceoff-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.faceoff-card__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.faceoff-card__footer {
+  padding: 0.6rem 0.9rem;
+  background: rgba(4, 7, 16, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   SCORE HUD (CENTER COLUMN)
+   -------------------------------------------------------------------------- */
+
+.faceoff-score-hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.faceoff-score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(6, 10, 24, 0.95);
+  border: 3px solid var(--score-color, #00f0ff);
+  box-shadow: 0 0 25px var(--score-color, #00f0ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faceoff-score-circle__value {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--score-color, #00f0ff);
+}
+
+.faceoff-score-circle__label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.2rem;
+}
+
+.faceoff-tier-pill {
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  border: 1px solid currentColor;
+}
+
+.faceoff-funny-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffb800;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.faceoff-breakdown-toggle {
+  background: none;
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.5rem;
+}
+
+.faceoff-breakdown-toggle:hover {
+  color: #00f0ff;
+}
+
+.faceoff-breakdown-panel {
+  background: rgba(4, 8, 20, 0.85);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.faceoff-breakdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.faceoff-breakdown-row strong {
+  color: #00f0ff;
+}
+
+.faceoff-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   SESSION SUMMARY SCREEN
+   -------------------------------------------------------------------------- */
+
+.faceoff-summary-view {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faceoff-summary-card {
+  background: rgba(8, 14, 30, 0.95);
+  border: 1.5px solid rgba(0, 240, 255, 0.35);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faceoff-summary-header {
+  text-align: center;
+}
+
+.faceoff-summary-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #00f0ff;
+  letter-spacing: 0.12em;
+}
+
+.faceoff-summary-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0.2rem 0;
+  text-shadow: 0 0 16px rgba(0, 240, 255, 0.5);
+}
+
+.faceoff-summary-subtitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faceoff-summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.faceoff-stat-tile {
+  background: rgba(4, 8, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faceoff-stat-tile__label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.06em;
+}
+
+.faceoff-stat-tile__value {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 0.2rem 0;
+}
+
+.faceoff-stat-tile__sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.faceoff-summary-rounds-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #00f0ff;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.faceoff-summary-rounds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.faceoff-round-recap-card {
+  background: rgba(4, 8, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.faceoff-round-recap-card__header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+}
+
+.faceoff-round-recap-card__photos {
+  display: flex;
+  gap: 0.35rem;
+  height: 60px;
+}
+
+.faceoff-round-recap-card__photos img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.faceoff-round-recap-card__title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.faceoff-leaderboard-form {
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.faceoff-leaderboard-form__title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffb800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faceoff-leaderboard-form__row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.faceoff-input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  background: rgba(4, 7, 18, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.faceoff-input:focus {
+  border-color: #00f0ff;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-submitted-banner {
+  padding: 0.85rem;
+  border-radius: 8px;
+  background: rgba(0, 255, 136, 0.15);
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.faceoff-summary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   CONSENT MODAL
+   -------------------------------------------------------------------------- */
+
+.faceoff-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 4, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1.5rem;
+}
+
+.faceoff-modal {
+  max-width: 620px;
+  width: 100%;
+  background: rgba(8, 14, 30, 0.95);
+  border: 1.5px solid rgba(0, 240, 255, 0.4);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faceoff-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faceoff-modal__badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #00f0ff;
+  letter-spacing: 0.1em;
+}
+
+.faceoff-modal__close-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+.faceoff-modal__close-btn:hover {
+  color: #ff0055;
+}
+
+.faceoff-modal__title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.faceoff-modal__subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.82rem;
+  color: #00f0ff;
+  margin-top: -0.4rem;
+}
+
+.faceoff-modal__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0.75rem 0;
+}
+
+.faceoff-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background: rgba(4, 8, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+
+.faceoff-feature-item__icon {
+  color: #00f0ff;
+  margin-top: 0.15rem;
+}
+
+.faceoff-feature-item__text strong {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.82rem;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.faceoff-feature-item__text p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.faceoff-consent-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.faceoff-consent-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #00f0ff;
+  cursor: pointer;
+}
+
+.faceoff-consent-checkbox__label {
+  font-size: 0.82rem;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.faceoff-modal__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE QUERIES
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .faceoff-stage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faceoff-comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .faceoff-score-hud {
+    order: -1;
+    padding: 1rem;
+    background: rgba(8, 14, 30, 0.85);
+    border-radius: 12px;
+  }
+
+  .faceoff-summary-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* --------------------------------------------------------------------------
+   RETRY OVERLAY (Bounded Recovery & Clear Feedback)
+   -------------------------------------------------------------------------- */
+
+.faceoff-retry-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 12, 28, 0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  z-index: 20;
+  animation: faceoff-fade-in 0.25s ease-out;
+}
+
+.faceoff-retry-icon {
+  color: #ffb800;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 10px rgba(255, 184, 0, 0.6));
+}
+
+.faceoff-retry-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffb800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(255, 184, 0, 0.4);
+}
+
+.faceoff-retry-msg {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  max-width: 380px;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   DEVELOPER DIAGNOSTICS PANEL (PRIORITY 9)
+   -------------------------------------------------------------------------- */
+
+.faceoff-hud-diag-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  border-radius: 6px;
+  color: #00f0ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faceoff-hud-diag-btn:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: #00f0ff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.faceoff-diag-panel {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 360px;
+  max-height: 75vh;
+  overflow-y: auto;
+  background: rgba(4, 8, 20, 0.95);
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Rajdhani', monospace;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.faceoff-diag-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.25);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #00f0ff;
+  letter-spacing: 0.05em;
+}
+
+.faceoff-diag-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.faceoff-diag-close:hover {
+  color: #ff0055;
+}
+
+.faceoff-diag-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.faceoff-diag-label {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.faceoff-diag-val {
+  color: #e2e8f0;
+  font-weight: 700;
+  text-align: right;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.faceoff-diag-val--ok {
+  color: #00ff88;
+}
+
+.faceoff-diag-val--warn {
+  color: #ffb800;
+}
+
+.faceoff-diag-val--err {
+  color: #ff0055;
+}

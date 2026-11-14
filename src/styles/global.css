@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   GLOBAL CURSOR & POINTER INTERACTION SYSTEM
+   ========================================================================== */
+
+/* Native cursor always visible & aligned with mouse pointer */
+html, body {
+  cursor: default;
+}
+
+/* All interactive elements receive unmistakable pointer cursor */
+button,
+a,
+select,
+summary,
+[role="button"],
+[role="tab"],
+[role="radio"],
+[role="checkbox"],
+label[for],
+.arcade-btn,
+.cyber-btn,
+.clickable {
+  cursor: pointer;
+}
+
+/* Text inputs receive standard I-beam text cursor */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+textarea {
+  cursor: text;
+}
+
+/* Range sliders */
+input[type="range"] {
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  cursor: grab;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+input[type="range"]::-moz-range-thumb {
+  cursor: grab;
+}
+input[type="range"]:active::-moz-range-thumb {
+  cursor: grabbing;
+}
+
+/* Disabled elements */
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"],
+.disabled {
+  cursor: not-allowed !important;
+  pointer-events: auto;
+}
+
+/* Visual overlays & backdrops must never intercept clicks */
+.backdrop,
+.backdrop__image,
+.backdrop__overlay,
+.pointer-events-none {
+  pointer-events: none !important;
+}
+
+/* Touch devices: preserve natural touch handling */
+@media (pointer: coarse) {
+  .arcade-btn:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--neon-cyan);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-solid);
+  border: 1px solid var(--neon-cyan);
+  transform: translateY(-200%);
+  transition: transform 0.2s;
+}
+.skip-link:focus-visible {
+  transform: none;
+}
+
+/* Route transition: each top-level page fades in when it mounts.
+   Opacity only — a transform here would break the fixed backdrop beneath. */
+.page-enter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: page-in 0.5s ease-out both;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Row of page-level actions (back home, related links). */
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  animation: fade-up 0.6s var(--ease-out) 0.24s both;
+}

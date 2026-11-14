@@ -1,0 +1,40 @@
+/* Three-column layout for the three game modes */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.8vw, 36px);
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.game-grid__item {
+  aspect-ratio: 210 / 340;
+  min-height: 420px;
+  animation: fade-up 0.7s var(--ease-out) both;
+  animation-delay: calc(var(--i) * 110ms + 250ms);
+}
+
+@media (max-width: 899px) {
+  .game-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .game-grid__item {
+    aspect-ratio: 210 / 310;
+    min-height: 380px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 899px) {
+  .game-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 740px;
+  }
+  .game-grid__item {
+    aspect-ratio: 210 / 330;
+  }
+}

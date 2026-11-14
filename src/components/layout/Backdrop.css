@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--bg-deep);
+  pointer-events: none;
+}
+
+.backdrop__image {
+  position: absolute;
+  inset: -40px;
+  background-size: cover;
+  background-position: center 55%;
+  filter: blur(18px) saturate(1.2) brightness(0.45);
+  opacity: 0.85;
+}
+
+.backdrop__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    /* Fine scanlines */
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px),
+    /* Cyber grid pattern */
+    linear-gradient(rgba(var(--neon-cyan-rgb), 0.04) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(90deg, rgba(var(--neon-cyan-rgb), 0.04) 1px, transparent 1px) 0 0 / 48px 48px,
+    /* Ambient cyan glow (top-left) */
+    radial-gradient(circle at 18% 18%, rgba(var(--neon-cyan-rgb), 0.12) 0%, transparent 48%),
+    /* Ambient purple glow (top-right) */
+    radial-gradient(circle at 82% 22%, rgba(var(--neon-purple-rgb), 0.14) 0%, transparent 52%),
+    /* Supporting magenta accent glow (bottom-center) */
+    radial-gradient(circle at 50% 88%, rgba(var(--neon-magenta-rgb), 0.08) 0%, transparent 45%),
+    /* Deep vignette & readability contrast mask */
+    radial-gradient(ellipse at 50% 45%, transparent 20%, rgba(2, 7, 19, 0.88) 100%),
+    rgba(2, 7, 18, 0.65);
+}
+
+/* Subtle ambient pulse effect */
+.backdrop__overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(var(--neon-cyan-rgb), 0.06) 0%, transparent 60%);
+  animation: ambient-pulse 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes ambient-pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop__overlay::after {
+    animation: none;
+  }
+}

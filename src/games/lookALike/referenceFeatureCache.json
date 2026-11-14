@@ -1,0 +1,4266 @@
+{
+  "totalEntries": 110,
+  "version": "2.1.0",
+  "entries": [
+    {
+      "id": "male_ajith_grin",
+      "referenceId": "ajith_kumar_cheerful_rogue_grin_01",
+      "celebrityId": "ajith_kumar",
+      "name": "Ajith Kumar",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Ajith_Kumar/ajith_kumar_cheerful_rogue_grin_01.jpg",
+      "badge": "THALA",
+      "themeColor": "#00f0ff",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "jawOpen": 0.45,
+        "eyeSquintLeft": 0.65,
+        "eyeSquintRight": 0.65,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.38,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.16,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": 0.15,
+        "pitch": 0,
+        "roll": 0.05
+      }
+    },
+    {
+      "id": "male_ak_smirk",
+      "referenceId": "ajith_kumar_confident_smirk_02",
+      "celebrityId": "ajith_kumar",
+      "name": "Ajith Kumar",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Ajith_Kumar/ajith_kumar_confident_smirk_02.jpg",
+      "badge": "AK",
+      "themeColor": "#00d2ff",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.65,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileRight": 0.72,
+        "mouthDimpleRight": 0.65,
+        "browDownLeft": 0.4,
+        "browDownRight": 0.4,
+        "eyeSquintLeft": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.12,
+        "mouthWidthRatio": 0.65,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.1
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.02,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_arya_smile",
+      "referenceId": "arya_youthful_radiant_grin_01",
+      "celebrityId": "arya",
+      "name": "Arya",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Arya/arya_youthful_radiant_grin_01.jpg",
+      "badge": "FITNESS ICON",
+      "themeColor": "#00ff88",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "eyeWideLeft": 0.5,
+        "eyeWideRight": 0.5,
+        "jawOpen": 0.35
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.28,
+        "mouthCornerTilt": 0.15
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_atharva_eyebrow",
+      "referenceId": "atharvaa_curious_charming_smile_01",
+      "celebrityId": "atharvaa",
+      "name": "Atharvaa",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Atharvaa/atharvaa_curious_charming_smile_01.jpg",
+      "badge": "YOUTH ICON",
+      "themeColor": "#38bdf8",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browOuterUpRight": 0.82,
+        "mouthSmileLeft": 0.75,
+        "mouthSmileRight": 0.75,
+        "eyeSquintLeft": 0.3
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.38,
+        "mouthOpenRatio": 0.22,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.14
+      },
+      "headPose": {
+        "yaw": -0.08,
+        "pitch": 0.04,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "male_dhruv_energy",
+      "referenceId": "dhruv_vikram_rebellious_grin_01",
+      "celebrityId": "dhruv_vikram",
+      "name": "Dhruv Vikram",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Dhruv_Vikram/dhruv_vikram_rebellious_grin_01.jpg",
+      "badge": "RISING STAR",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.65,
+        "browInnerUp": 0.45,
+        "eyeWideLeft": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.2,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.25,
+        "mouthCornerTilt": 0.12
+      },
+      "headPose": {
+        "yaw": 0.1,
+        "pitch": -0.02,
+        "roll": 0.04
+      }
+    },
+    {
+      "id": "male_gou_skeptical",
+      "referenceId": "goundamani_sarcastic_glare_01",
+      "celebrityId": "goundamani",
+      "name": "Goundamani",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Goundamani/goundamani_sarcastic_glare_01.jpg",
+      "badge": "COMEDY KING",
+      "themeColor": "#eab308",
+      "expressionCategory": "suspicious_side_eye",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.85,
+        "browDownRight": 0.85,
+        "mouthPressLeft": 0.75,
+        "mouthPressRight": 0.75,
+        "eyeSquintLeft": 0.6,
+        "eyeSquintRight": 0.6
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.15,
+        "mouthOpenRatio": 0.02,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": -0.1
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_gou_grimace",
+      "referenceId": "goundamani_disgusted_snarl_02",
+      "celebrityId": "goundamani",
+      "name": "Goundamani",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Goundamani/goundamani_disgusted_snarl_02.jpg",
+      "badge": "COMEDY MONARCH",
+      "themeColor": "#f97316",
+      "expressionCategory": "exaggerated_anger",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "noseSneerLeft": 0.85,
+        "noseSneerRight": 0.85,
+        "mouthFrownLeft": 0.8,
+        "mouthFrownRight": 0.8,
+        "browDownLeft": 0.9,
+        "browDownRight": 0.9
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.12,
+        "mouthOpenRatio": 0.14,
+        "eyeOpenRatio": 0.15,
+        "mouthCornerTilt": -0.25
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": -0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_gou_outrage",
+      "referenceId": "goundamani_comedic_fury_03",
+      "celebrityId": "goundamani",
+      "name": "Goundamani",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Goundamani/goundamani_comedic_fury_03.jpg",
+      "badge": "ROYAL RANT",
+      "themeColor": "#ef4444",
+      "expressionCategory": "exaggerated_anger",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "jawOpen": 0.9,
+        "browDownLeft": 0.8,
+        "browDownRight": 0.8,
+        "mouthUpperUpLeft": 0.7,
+        "mouthUpperUpRight": 0.7,
+        "eyeWideLeft": 0.65,
+        "eyeWideRight": 0.65
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.7,
+        "browRaiseRatio": 0.2,
+        "eyeOpenRatio": 0.3,
+        "mouthCornerTilt": -0.08
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.08,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_gou_eyeroll",
+      "referenceId": "goundamani_exasperated_disbelief_04",
+      "celebrityId": "goundamani",
+      "name": "Goundamani",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Goundamani/goundamani_exasperated_disbelief_04.jpg",
+      "badge": "LEGENDARY GLARE",
+      "themeColor": "#f59e0b",
+      "expressionCategory": "raised_eyebrow_disbelief",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.65,
+        "mouthPucker": 0.45,
+        "eyeSquintLeft": 0.5,
+        "eyeSquintRight": 0.5
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.35,
+        "mouthOpenRatio": 0.05,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": -0.12
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.1,
+        "roll": -0.03
+      }
+    },
+    {
+      "id": "male_hr_smile",
+      "referenceId": "hrithik_roshan_radiant_grin_01",
+      "celebrityId": "hrithik_roshan",
+      "name": "Hrithik Roshan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Hrithik_Roshan/hrithik_roshan_radiant_grin_01.jpg",
+      "badge": "GREEK GOD",
+      "themeColor": "#06b6d4",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.92,
+        "mouthSmileRight": 0.92,
+        "jawOpen": 0.4,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.35,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.2
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_hr_gaze",
+      "referenceId": "hrithik_roshan_focused_stare_02",
+      "celebrityId": "hrithik_roshan",
+      "name": "Hrithik Roshan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Hrithik_Roshan/hrithik_roshan_focused_stare_02.jpg",
+      "badge": "ACTION HERO",
+      "themeColor": "#3b82f6",
+      "expressionCategory": "overdramatic",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.7,
+        "browDownRight": 0.7,
+        "eyeSquintLeft": 0.45,
+        "eyeSquintRight": 0.45,
+        "mouthPressLeft": 0.5,
+        "mouthPressRight": 0.5
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.16,
+        "mouthOpenRatio": 0.03,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.03,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_jeeva_smile",
+      "referenceId": "jiiva_comedy_grin_01",
+      "celebrityId": "jiiva",
+      "name": "Jiiva",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Jiiva/jiiva_comedy_grin_01.jpg",
+      "badge": "KO HERO",
+      "themeColor": "#10b981",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "jawOpen": 0.32,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.15
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_jeeva_wink",
+      "referenceId": "jiiva_cheeky_wink_02",
+      "celebrityId": "jiiva",
+      "name": "Jiiva",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Jiiva/jiiva_cheeky_wink_02.jpg",
+      "badge": "CHARMER",
+      "themeColor": "#14b8a6",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeBlinkRight": 0.9,
+        "mouthSmileLeft": 0.8,
+        "mouthSmileRight": 0.6,
+        "cheekSquintRight": 0.8
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.12,
+        "mouthOpenRatio": 0.25,
+        "mouthCornerTilt": 0.16
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": -0.03,
+        "roll": 0.04
+      }
+    },
+    {
+      "id": "male_kh_shock",
+      "referenceId": "kamal_haasan_stunned_disbelief_01",
+      "celebrityId": "kamal_haasan",
+      "name": "Kamal Haasan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Kamal_Haasan/kamal_haasan_stunned_disbelief_01.jpg",
+      "badge": "ULAGANAYAGAN",
+      "themeColor": "#8b5cf6",
+      "expressionCategory": "extreme_surprise",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.58,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeWideLeft": 0.85,
+        "eyeWideRight": 0.85,
+        "browInnerUp": 0.75,
+        "browOuterUpLeft": 0.6,
+        "browOuterUpRight": 0.6,
+        "jawOpen": 0.55,
+        "mouthFunnel": 0.35
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.36,
+        "browRaiseRatio": 0.42,
+        "mouthOpenRatio": 0.4,
+        "mouthWidthRatio": 0.58,
+        "mouthCornerTilt": -0.05
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.15,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_kh_laugh",
+      "referenceId": "kamal_haasan_hearty_laughter_02",
+      "celebrityId": "kamal_haasan",
+      "name": "Kamal Haasan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Kamal_Haasan/kamal_haasan_hearty_laughter_02.jpg",
+      "badge": "CINEMA MAESTRO",
+      "themeColor": "#a855f7",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.8,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "jawOpen": 0.65,
+        "eyeSquintLeft": 0.7,
+        "eyeSquintRight": 0.7,
+        "cheekPuff": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.5,
+        "mouthWidthRatio": 0.8,
+        "eyeOpenRatio": 0.14,
+        "mouthCornerTilt": 0.22
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": -0.08,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "male_ms_frown",
+      "referenceId": "ms_bhaskar_bewilderment_01",
+      "celebrityId": "ms_bhaskar",
+      "name": "MS Bhaskar",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/MS_Bhaskar/ms_bhaskar_bewilderment_01.jpg",
+      "badge": "VETERAN COMEDIAN",
+      "themeColor": "#64748b",
+      "expressionCategory": "confusion",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.75,
+        "browDownLeft": 0.4,
+        "browDownRight": 0.4,
+        "mouthFrownLeft": 0.6,
+        "mouthFrownRight": 0.6
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.32,
+        "mouthOpenRatio": 0.04,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": -0.18
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_ms_melodrama",
+      "referenceId": "ms_bhaskar_emotional_outburst_02",
+      "celebrityId": "ms_bhaskar",
+      "name": "MS Bhaskar",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/MS_Bhaskar/ms_bhaskar_emotional_outburst_02.jpg",
+      "badge": "DRAMA KING",
+      "themeColor": "#94a3b8",
+      "expressionCategory": "funny_crying",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.85,
+        "mouthFrownLeft": 0.8,
+        "mouthFrownRight": 0.8,
+        "jawOpen": 0.45,
+        "mouthStretchLeft": 0.5,
+        "mouthStretchRight": 0.5
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.4,
+        "mouthOpenRatio": 0.35,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": -0.28
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": -0.06,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "male_rs_laughter",
+      "referenceId": "rajinikanth_superstar_swagger_01",
+      "celebrityId": "rajinikanth",
+      "name": "Superstar Rajinikanth",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Rajinikanth/rajinikanth_superstar_swagger_01.jpg",
+      "badge": "SUPERSTAR",
+      "themeColor": "#eab308",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.75,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "jawOpen": 0.7,
+        "eyeWideLeft": 0.65,
+        "eyeWideRight": 0.65,
+        "cheekPuff": 0.4,
+        "browInnerUp": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.52,
+        "mouthWidthRatio": 0.75,
+        "eyeOpenRatio": 0.28,
+        "mouthCornerTilt": 0.16
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.1,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_santa_smug",
+      "referenceId": "santhanam_sarcastic_smirk_01",
+      "celebrityId": "santhanam",
+      "name": "Santhanam",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Santhanam/santhanam_sarcastic_smirk_01.jpg",
+      "badge": "ROAST MASTER",
+      "themeColor": "#ec4899",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthDimpleLeft": 0.65,
+        "browOuterUpLeft": 0.6,
+        "eyeSquintRight": 0.4
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.3,
+        "mouthOpenRatio": 0.14,
+        "mouthCornerTilt": 0.14
+      },
+      "headPose": {
+        "yaw": -0.08,
+        "pitch": 0.02,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_santa_chuckle",
+      "referenceId": "santhanam_side_eye_chuckle_02",
+      "celebrityId": "santhanam",
+      "name": "Santhanam",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Santhanam/santhanam_side_eye_chuckle_02.jpg",
+      "badge": "COMEDY STAR",
+      "themeColor": "#d946ef",
+      "expressionCategory": "suspicious_side_eye",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeSquintLeft": 0.6,
+        "eyeSquintRight": 0.6,
+        "mouthSmileRight": 0.8,
+        "browDownLeft": 0.4
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.16,
+        "mouthOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16
+      },
+      "headPose": {
+        "yaw": 0.12,
+        "pitch": 0,
+        "roll": 0.04
+      }
+    },
+    {
+      "id": "male_santa_jawdrop",
+      "referenceId": "santhanam_jaw_drop_03",
+      "celebrityId": "santhanam",
+      "name": "Santhanam",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Santhanam/santhanam_jaw_drop_03.jpg",
+      "badge": "LAUGHTER ICON",
+      "themeColor": "#a855f7",
+      "expressionCategory": "shock",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "jawOpen": 0.75,
+        "eyeWideLeft": 0.8,
+        "eyeWideRight": 0.8,
+        "browInnerUp": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.58,
+        "eyeOpenRatio": 0.36,
+        "browRaiseRatio": 0.36,
+        "mouthCornerTilt": -0.05
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_sen_clueless",
+      "referenceId": "senthil_clueless_innocence_01",
+      "celebrityId": "senthil",
+      "name": "Senthil",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Senthil/senthil_clueless_innocence_01.jpg",
+      "badge": "PETTAI KING",
+      "themeColor": "#f59e0b",
+      "expressionCategory": "confusion",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeWideLeft": 0.6,
+        "eyeWideRight": 0.6,
+        "mouthSmileLeft": 0.45,
+        "mouthSmileRight": 0.45,
+        "browInnerUp": 0.5
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.28,
+        "mouthOpenRatio": 0.1,
+        "browRaiseRatio": 0.3,
+        "mouthCornerTilt": 0.06
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_senthil_sleepy",
+      "referenceId": "senthil_peaceful_ignorer_02",
+      "celebrityId": "senthil",
+      "name": "Senthil",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Senthil/senthil_peaceful_ignorer_02.jpg",
+      "badge": "ICONIC COMEDIAN",
+      "themeColor": "#ffaa00",
+      "expressionCategory": "deadpan_confused",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.95,
+        "mouthPressLeft": 0.75,
+        "mouthPressRight": 0.75,
+        "browDownLeft": 0.4,
+        "browDownRight": 0.4
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.02,
+        "mouthOpenRatio": 0.01,
+        "browRaiseRatio": 0.22,
+        "mouthCornerTilt": -0.05
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_speed_shout",
+      "referenceId": "ishowspeed_hype_shock_01",
+      "celebrityId": "ishowspeed",
+      "name": "IShowSpeed",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/IShowSpeed/ishowspeed_hype_shock_01.jpg",
+      "badge": "VIRAL SENSATION",
+      "themeColor": "#ef4444",
+      "expressionCategory": "extreme_surprise",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "jawOpen": 0.95,
+        "eyeWideLeft": 0.9,
+        "eyeWideRight": 0.9,
+        "browInnerUp": 0.7,
+        "mouthUpperUpLeft": 0.8,
+        "mouthUpperUpRight": 0.8
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.8,
+        "eyeOpenRatio": 0.4,
+        "browRaiseRatio": 0.4,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_jeeva_squint",
+      "referenceId": "jiiva_suspicious_cross_exam_03",
+      "celebrityId": "jiiva",
+      "name": "Jiiva",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Jiiva/jiiva_suspicious_cross_exam_03.png",
+      "badge": "SQUINT MASTER",
+      "themeColor": "#06b6d4",
+      "expressionCategory": "suspicious_side_eye",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeSquintLeft": 0.95,
+        "eyeSquintRight": 0.95,
+        "browDownLeft": 0.85,
+        "browDownRight": 0.85,
+        "mouthPressLeft": 0.65,
+        "mouthPressRight": 0.65
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.05,
+        "browRaiseRatio": 0.1,
+        "mouthOpenRatio": 0.02,
+        "mouthCornerTilt": -0.08
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.02,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_srk_romantic",
+      "referenceId": "shah_rukh_khan_dimpled_smile_01",
+      "celebrityId": "shah_rukh_khan",
+      "name": "Shah Rukh Khan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Shah_Rukh_Khan/shah_rukh_khan_dimpled_smile_01.jpg",
+      "badge": "BADSHAH",
+      "themeColor": "#e11d48",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.8,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "mouthDimpleLeft": 0.85,
+        "mouthDimpleRight": 0.85,
+        "eyeSquintLeft": 0.5,
+        "eyeSquintRight": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.32,
+        "mouthWidthRatio": 0.8,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.22
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": -0.02,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "male_srk_laugh",
+      "referenceId": "shah_rukh_khan_warm_laughter_02",
+      "celebrityId": "shah_rukh_khan",
+      "name": "Shah Rukh Khan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Shah_Rukh_Khan/shah_rukh_khan_warm_laughter_02.jpg",
+      "badge": "KING KHAN",
+      "themeColor": "#be123c",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.82,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.95,
+        "mouthSmileRight": 0.95,
+        "jawOpen": 0.6,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.48,
+        "mouthWidthRatio": 0.82,
+        "eyeOpenRatio": 0.16,
+        "mouthCornerTilt": 0.24
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.06,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_srk_eyebrow",
+      "referenceId": "shah_rukh_khan_eyebrow_raise_03",
+      "celebrityId": "shah_rukh_khan",
+      "name": "Shah Rukh Khan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Shah_Rukh_Khan/shah_rukh_khan_eyebrow_raise_03.jpg",
+      "badge": "ICONIC SRK",
+      "themeColor": "#9f1239",
+      "expressionCategory": "raised_eyebrow_disbelief",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browOuterUpLeft": 0.85,
+        "mouthSmileRight": 0.65,
+        "eyeSquintRight": 0.4
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.38,
+        "mouthOpenRatio": 0.15,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.12
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.02,
+        "roll": -0.02
+      }
+    },
+    {
+      "id": "male_ss_smile",
+      "referenceId": "sivakarthikeyan_friendly_smile_01",
+      "celebrityId": "sivakarthikeyan",
+      "name": "Sivakarthikeyan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Sivakarthikeyan/sivakarthikeyan_friendly_smile_01.jpg",
+      "badge": "PRINCE",
+      "themeColor": "#22c55e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.75,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "jawOpen": 0.38,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.75,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_ss_shock",
+      "referenceId": "sivakarthikeyan_comedic_double_take_02",
+      "celebrityId": "sivakarthikeyan",
+      "name": "Sivakarthikeyan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Sivakarthikeyan/sivakarthikeyan_comedic_double_take_02.jpg",
+      "badge": "ENTERTAINER",
+      "themeColor": "#16a34a",
+      "expressionCategory": "shock",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeWideLeft": 0.8,
+        "eyeWideRight": 0.8,
+        "browInnerUp": 0.7,
+        "jawOpen": 0.45
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.35,
+        "browRaiseRatio": 0.38,
+        "mouthOpenRatio": 0.32,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.04,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vadi_glare",
+      "referenceId": "vadivelu_suspicious_glare_01",
+      "celebrityId": "vadivelu",
+      "name": "Vadivelu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vadivelu/vadivelu_suspicious_glare_01.jpg",
+      "badge": "VAIGAIPUYAL",
+      "themeColor": "#eab308",
+      "expressionCategory": "suspicious_side_eye",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.88,
+        "browDownRight": 0.88,
+        "mouthPressLeft": 0.7,
+        "mouthPressRight": 0.7,
+        "eyeSquintLeft": 0.5,
+        "eyeSquintRight": 0.5,
+        "noseSneerLeft": 0.4,
+        "noseSneerRight": 0.4,
+        "mouthFrownLeft": 0.35,
+        "mouthFrownRight": 0.35
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.16,
+        "mouthOpenRatio": 0.02,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": -0.08
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vadi_crying",
+      "referenceId": "vadivelu_comedic_weeping_02",
+      "celebrityId": "vadivelu",
+      "name": "Vadivelu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vadivelu/vadivelu_comedic_weeping_02.jpg",
+      "badge": "COMEDY EMPEROR",
+      "themeColor": "#f97316",
+      "expressionCategory": "funny_crying",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthFrownLeft": 0.9,
+        "mouthFrownRight": 0.9,
+        "jawOpen": 0.7,
+        "browInnerUp": 0.85,
+        "eyeSquintLeft": 0.8,
+        "eyeSquintRight": 0.8
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.55,
+        "browRaiseRatio": 0.42,
+        "eyeOpenRatio": 0.1,
+        "mouthCornerTilt": -0.35
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.08,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vadi_smirk",
+      "referenceId": "vadivelu_cunning_smirk_03",
+      "celebrityId": "vadivelu",
+      "name": "Vadivelu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vadivelu/vadivelu_cunning_smirk_03.jpg",
+      "badge": "SCHEMING LEGEND",
+      "themeColor": "#facc15",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.8,
+        "mouthDimpleLeft": 0.75,
+        "eyeSquintRight": 0.6,
+        "browDownLeft": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.18,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.15
+      },
+      "headPose": {
+        "yaw": -0.08,
+        "pitch": 0.02,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "male_vadi_scream",
+      "referenceId": "vadivelu_hilarious_terror_04",
+      "celebrityId": "vadivelu",
+      "name": "Vadivelu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vadivelu/vadivelu_hilarious_terror_04.jpg",
+      "badge": "PANIC ICON",
+      "themeColor": "#ef4444",
+      "expressionCategory": "shock",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "jawOpen": 0.95,
+        "eyeWideLeft": 0.95,
+        "eyeWideRight": 0.95,
+        "browInnerUp": 0.9,
+        "mouthFunnel": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.85,
+        "eyeOpenRatio": 0.45,
+        "browRaiseRatio": 0.48,
+        "mouthCornerTilt": -0.15
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.08,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vj_smirk",
+      "referenceId": "thalapathy_vijay_confident_smirk_01",
+      "celebrityId": "thalapathy_vijay",
+      "name": "Thalapathy Vijay",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Thalapathy_Vijay/thalapathy_vijay_confident_smirk_01.jpg",
+      "badge": "THALAPATHY",
+      "themeColor": "#00f0ff",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.65,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.65,
+        "mouthSmileRight": 0.65,
+        "jawOpen": 0.25,
+        "mouthDimpleLeft": 0.45,
+        "mouthDimpleRight": 0.45,
+        "eyeSquintLeft": 0.25,
+        "eyeSquintRight": 0.25
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.18,
+        "mouthWidthRatio": 0.65,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.12
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vj_grin",
+      "referenceId": "thalapathy_vijay_big_grin_02",
+      "celebrityId": "thalapathy_vijay",
+      "name": "Thalapathy Vijay",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Thalapathy_Vijay/thalapathy_vijay_big_grin_02.jpg",
+      "badge": "BOX OFFICE KING",
+      "themeColor": "#38bdf8",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.92,
+        "mouthSmileRight": 0.92,
+        "jawOpen": 0.45,
+        "eyeSquintLeft": 0.4,
+        "eyeSquintRight": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.36,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.2
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.02,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vj_sidesmile",
+      "referenceId": "thalapathy_vijay_master_swag_03",
+      "celebrityId": "thalapathy_vijay",
+      "name": "Thalapathy Vijay",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Thalapathy_Vijay/thalapathy_vijay_master_swag_03.png",
+      "badge": "THE MASTER",
+      "themeColor": "#0284c7",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.8,
+        "mouthDimpleLeft": 0.7,
+        "eyeSquintLeft": 0.3
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.2,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.15
+      },
+      "headPose": {
+        "yaw": -0.06,
+        "pitch": 0.02,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "male_vjs_stare",
+      "referenceId": "vijay_sethupathi_deadpan_realism_01",
+      "celebrityId": "vijay_sethupathi",
+      "name": "Vijay Sethupathi",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vijay_Sethupathi/vijay_sethupathi_deadpan_realism_01.jpg",
+      "badge": "MAKKAL SELVAN",
+      "themeColor": "#f59e0b",
+      "expressionCategory": "deadpan_confused",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.4,
+        "browDownRight": 0.4,
+        "mouthPressLeft": 0.5,
+        "mouthPressRight": 0.5
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.2,
+        "mouthOpenRatio": 0.04,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vjs_laugh",
+      "referenceId": "vijay_sethupathi_belly_laugh_02",
+      "celebrityId": "vijay_sethupathi",
+      "name": "Vijay Sethupathi",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vijay_Sethupathi/vijay_sethupathi_belly_laugh_02.jpg",
+      "badge": "PEOPLES STAR",
+      "themeColor": "#d97706",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "jawOpen": 0.55,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.42,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.14,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": -0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vjs_ponder",
+      "referenceId": "vijay_sethupathi_contemplative_03",
+      "celebrityId": "vijay_sethupathi",
+      "name": "Vijay Sethupathi",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vijay_Sethupathi/vijay_sethupathi_contemplative_03.jpg",
+      "badge": "NATURAL ACTOR",
+      "themeColor": "#b45309",
+      "expressionCategory": "raised_eyebrow_disbelief",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.6,
+        "browDownLeft": 0.5,
+        "browDownRight": 0.5,
+        "mouthPressLeft": 0.6,
+        "mouthPressRight": 0.6
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.26,
+        "mouthOpenRatio": 0.03,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": -0.06
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.04,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_vk_satire",
+      "referenceId": "vivek_satirical_smile_01",
+      "celebrityId": "vivek",
+      "name": "Vivek",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Vivek/vivek_satirical_smile_01.jpg",
+      "badge": "CHINNA KALAIVANAR",
+      "themeColor": "#10b981",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "jawOpen": 0.4,
+        "browInnerUp": 0.5,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.32,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.03,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_yb_bewildered",
+      "referenceId": "yogi_babu_deadpan_bewilderment_01",
+      "celebrityId": "yogi_babu",
+      "name": "Yogi Babu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Yogi_Babu/yogi_babu_deadpan_bewilderment_01.jpg",
+      "badge": "COMEDY SENSATION",
+      "themeColor": "#8b5cf6",
+      "expressionCategory": "deadpan_confused",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeWideLeft": 0.75,
+        "eyeWideRight": 0.75,
+        "browInnerUp": 0.65,
+        "mouthPressLeft": 0.6,
+        "mouthPressRight": 0.6
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.32,
+        "browRaiseRatio": 0.35,
+        "mouthOpenRatio": 0.03,
+        "mouthCornerTilt": -0.05
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.05,
+        "roll": 0
+      }
+    },
+    {
+      "id": "male_yb_doubletake",
+      "referenceId": "yogi_babu_comedic_shock_02",
+      "celebrityId": "yogi_babu",
+      "name": "Yogi Babu",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Yogi_Babu/yogi_babu_comedic_shock_02.jpg",
+      "badge": "KING OF DEADPAN",
+      "themeColor": "#a855f7",
+      "expressionCategory": "shock",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeWideLeft": 0.88,
+        "eyeWideRight": 0.88,
+        "jawOpen": 0.6,
+        "browInnerUp": 0.75,
+        "mouthFunnel": 0.4
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.38,
+        "mouthOpenRatio": 0.45,
+        "browRaiseRatio": 0.4,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0.08,
+        "pitch": 0.02,
+        "roll": -0.04
+      }
+    },
+    {
+      "id": "female_ar_regal",
+      "referenceId": "anushka_shetty_majestic_intensity_01",
+      "celebrityId": "anushka_shetty",
+      "name": "Anushka Shetty",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Anushka_Shetty/anushka_shetty_majestic_intensity_01.jpg",
+      "badge": "LADY SUPERSTAR",
+      "themeColor": "#e11d48",
+      "expressionCategory": "overdramatic",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.7,
+        "browDownRight": 0.7,
+        "eyeWideLeft": 0.6,
+        "eyeWideRight": 0.6,
+        "mouthPressLeft": 0.5,
+        "mouthPressRight": 0.5
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.22,
+        "eyeOpenRatio": 0.26,
+        "mouthOpenRatio": 0.03,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.04,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_hansika_bubbly",
+      "referenceId": "hansika_motwani_bubbly_charm_01",
+      "celebrityId": "hansika_motwani",
+      "name": "Hansika Motwani",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Hansika_Motwani/hansika_motwani_bubbly_charm_01.jpg",
+      "badge": "BUBBLY STAR",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7,
+        "jawOpen": 0.35
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.2
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": -0.02,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "female_il_wink",
+      "referenceId": "ileana_dcruz_sassy_wink_01",
+      "celebrityId": "ileana_dcruz",
+      "name": "Ileana D'Cruz",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Ileana_DCruz/ileana_dcruz_sassy_wink_01.jpg",
+      "badge": "SASSY ICON",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeBlinkRight": 0.92,
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.7,
+        "cheekSquintRight": 0.8
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.12,
+        "mouthOpenRatio": 0.24,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.02,
+        "roll": 0.04
+      }
+    },
+    {
+      "id": "female_tamannaah_radiance",
+      "referenceId": "tamannaah_bhatia_dazzling_grin_01",
+      "celebrityId": "tamannaah_bhatia",
+      "name": "Tamannaah Bhatia",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Tamannaah_Bhatia/tamannaah_bhatia_dazzling_grin_01.jpg",
+      "badge": "GLAMOUR QUEEN",
+      "themeColor": "#fb7185",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.92,
+        "mouthSmileRight": 0.92,
+        "jawOpen": 0.4,
+        "cheekSquintLeft": 0.65,
+        "cheekSquintRight": 0.65
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.32,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.22
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_keerthy_pout",
+      "referenceId": "keerthy_suresh_expressive_pout_01",
+      "celebrityId": "keerthy_suresh",
+      "name": "Keerthy Suresh",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Keerthy_Suresh/keerthy_suresh_expressive_pout_01.jpg",
+      "badge": "NATIONAL AWARD WINNER",
+      "themeColor": "#f472b6",
+      "expressionCategory": "pursed_lips",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthPucker": 0.75,
+        "mouthFrownLeft": 0.6,
+        "mouthFrownRight": 0.6,
+        "browInnerUp": 0.7,
+        "eyeWideLeft": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.08,
+        "mouthCornerTilt": -0.18,
+        "browRaiseRatio": 0.35,
+        "eyeOpenRatio": 0.26
+      },
+      "headPose": {
+        "yaw": -0.06,
+        "pitch": 0.04,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "female_sarala_pout",
+      "referenceId": "kovai_sarala_sassy_pout_01",
+      "celebrityId": "kovai_sarala",
+      "name": "Kovai Sarala",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Kovai_Sarala/kovai_sarala_sassy_pout_01.jpg",
+      "badge": "COMEDY QUEEN",
+      "themeColor": "#a855f7",
+      "expressionCategory": "suspicious_side_eye",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthFrownLeft": 0.9,
+        "mouthFrownRight": 0.9,
+        "mouthShrugLower": 0.8,
+        "mouthPucker": 0.5,
+        "browInnerUp": 0.7,
+        "browDownLeft": 0.35,
+        "browDownRight": 0.35
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.04,
+        "mouthCornerTilt": -0.32,
+        "browRaiseRatio": 0.38,
+        "eyeOpenRatio": 0.22
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_sarala_scream",
+      "referenceId": "kovai_sarala_comedic_fury_02",
+      "celebrityId": "kovai_sarala",
+      "name": "Kovai Sarala",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Kovai_Sarala/kovai_sarala_comedic_fury_02.jpg",
+      "badge": "COMEDY TITAN",
+      "themeColor": "#c084fc",
+      "expressionCategory": "exaggerated_anger",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "jawOpen": 0.92,
+        "mouthUpperUpLeft": 0.8,
+        "mouthUpperUpRight": 0.8,
+        "browDownLeft": 0.85,
+        "browDownRight": 0.85,
+        "eyeWideLeft": 0.8,
+        "eyeWideRight": 0.8
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.75,
+        "browRaiseRatio": 0.2,
+        "eyeOpenRatio": 0.34,
+        "mouthCornerTilt": -0.15
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.06,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_manorama_laugh",
+      "referenceId": "manorama_golden_era_laugh_01",
+      "celebrityId": "manorama",
+      "name": "Manorama",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Manorama/manorama_golden_era_laugh_01.jpg",
+      "badge": "AACHI",
+      "themeColor": "#f59e0b",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.8,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.95,
+        "mouthSmileRight": 0.95,
+        "jawOpen": 0.6,
+        "cheekSquintLeft": 0.8,
+        "cheekSquintRight": 0.8,
+        "browInnerUp": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.45,
+        "mouthWidthRatio": 0.8,
+        "eyeOpenRatio": 0.16,
+        "mouthCornerTilt": 0.2
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.04,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_meena_eyeroll",
+      "referenceId": "meena_comedic_annoyance_01",
+      "celebrityId": "meena",
+      "name": "Meena",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Meena/meena_comedic_annoyance_01.jpg",
+      "badge": "EVERGREEN STAR",
+      "themeColor": "#ec4899",
+      "expressionCategory": "raised_eyebrow_disbelief",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.65,
+        "browOuterUpRight": 0.6,
+        "mouthSmileRight": 0.5,
+        "eyeWideLeft": 0.6,
+        "eyeWideRight": 0.6
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.36,
+        "eyeOpenRatio": 0.3,
+        "mouthOpenRatio": 0.1,
+        "mouthCornerTilt": 0.08
+      },
+      "headPose": {
+        "yaw": 0.08,
+        "pitch": 0.08,
+        "roll": -0.03
+      }
+    },
+    {
+      "id": "female_nayan_smirk",
+      "referenceId": "nayanthara_poised_smirk_01",
+      "celebrityId": "nayanthara",
+      "name": "Nayanthara",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Nayanthara/nayanthara_poised_smirk_01.jpg",
+      "badge": "LADY SUPERSTAR",
+      "themeColor": "#e11d48",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.66,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileRight": 0.75,
+        "mouthDimpleRight": 0.6,
+        "browDownLeft": 0.3,
+        "eyeSquintLeft": 0.3
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.1,
+        "mouthWidthRatio": 0.66,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.14
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_nayan_stare",
+      "referenceId": "nayanthara_cinema_icon_gaze_02",
+      "celebrityId": "nayanthara",
+      "name": "Nayanthara",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Nayanthara/nayanthara_cinema_icon_gaze_02.jpg",
+      "badge": "QUEEN OF SOUTH",
+      "themeColor": "#be123c",
+      "expressionCategory": "overdramatic",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "browDownLeft": 0.65,
+        "browDownRight": 0.65,
+        "eyeSquintLeft": 0.4,
+        "eyeSquintRight": 0.4,
+        "mouthPressLeft": 0.6,
+        "mouthPressRight": 0.6
+      },
+      "targetRatios": {
+        "browRaiseRatio": 0.18,
+        "mouthOpenRatio": 0.02,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0.02,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_nazriya_mischief",
+      "referenceId": "nazriya_nazim_mischievous_pout_01",
+      "celebrityId": "nazriya_nazim",
+      "name": "Nazriya Nazim",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Nazriya_Nazim/nazriya_nazim_mischievous_pout_01.jpg",
+      "badge": "HEARTTHROB",
+      "themeColor": "#06b6d4",
+      "expressionCategory": "pursed_lips",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthPucker": 0.8,
+        "eyeWideLeft": 0.85,
+        "eyeWideRight": 0.85,
+        "browInnerUp": 0.8
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.38,
+        "mouthOpenRatio": 0.12,
+        "browRaiseRatio": 0.42,
+        "mouthCornerTilt": -0.1
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": -0.04,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_nithya_chuckle",
+      "referenceId": "nithya_menen_natural_laughter_01",
+      "celebrityId": "nithya_menen",
+      "name": "Nithya Menen",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Nithya_Menen/nithya_menen_natural_laughter_01.jpg",
+      "badge": "VERSATILE STAR",
+      "themeColor": "#10b981",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7,
+        "jawOpen": 0.35
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": -0.03,
+        "pitch": -0.02,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "female_oviya_carefree",
+      "referenceId": "oviya_unbothered_smile_01",
+      "celebrityId": "oviya",
+      "name": "Oviya",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Oviya/oviya_unbothered_smile_01.jpg",
+      "badge": "CULT FAVORITE",
+      "themeColor": "#a78bfa",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "browOuterUpLeft": 0.6,
+        "eyeSquintLeft": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.16
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0,
+        "roll": -0.03
+      }
+    },
+    {
+      "id": "female_rashmika_wink",
+      "referenceId": "rashmika_mandanna_sweet_smile_01",
+      "celebrityId": "rashmika_mandanna",
+      "name": "Rashmika Mandanna",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Rashmika_Mandanna/rashmika_mandanna_sweet_smile_01.jpg",
+      "badge": "NATIONAL CRUSH",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "eyeBlinkLeft": 0.9,
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "cheekSquintLeft": 0.85,
+        "cheekSquintRight": 0.85
+      },
+      "targetRatios": {
+        "eyeOpenRatio": 0.14,
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.78,
+        "mouthCornerTilt": 0.22
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": -0.02,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "female_samantha_beam",
+      "referenceId": "samantha_dynamic_energy_01",
+      "celebrityId": "samantha",
+      "name": "Samantha Ruth Prabhu",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Samantha/samantha_dynamic_energy_01.jpg",
+      "badge": "TOP STAR",
+      "themeColor": "#e11d48",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.8,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.92,
+        "mouthSmileRight": 0.92,
+        "jawOpen": 0.42,
+        "eyeWideLeft": 0.5,
+        "eyeWideRight": 0.5,
+        "cheekSquintLeft": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.34,
+        "mouthWidthRatio": 0.8,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.2
+      },
+      "headPose": {
+        "yaw": 0,
+        "pitch": 0,
+        "roll": 0
+      }
+    },
+    {
+      "id": "female_trisha_elegance",
+      "referenceId": "trisha_princess_smile_01",
+      "celebrityId": "trisha",
+      "name": "Trisha Krishnan",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Trisha/trisha_princess_smile_01.jpg",
+      "badge": "SOUTH QUEEN",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "jawOpen": 0.28,
+        "cheekSquintLeft": 0.5,
+        "cheekSquintRight": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.18
+      },
+      "headPose": {
+        "yaw": -0.03,
+        "pitch": 0,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "male_dhanush_smirk",
+      "referenceId": "dhanush_intense_smirk_01",
+      "celebrityId": "dhanush",
+      "name": "Dhanush",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Dhanush/dhanush_intense_smirk_01.jpg",
+      "badge": "NATIONAL AWARD WINNER",
+      "themeColor": "#0284c7",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.66,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.7
+      },
+      "targetBlendshapes": {
+        "mouthSmileRight": 0.65,
+        "mouthDimpleRight": 0.6,
+        "eyeSquintLeft": 0.45,
+        "eyeSquintRight": 0.45,
+        "browDownLeft": 0.35,
+        "browDownRight": 0.35
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.12,
+        "mouthWidthRatio": 0.66,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.12,
+        "browRaiseRatio": 0.22
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.02,
+        "roll": 0.01
+      }
+    },
+    {
+      "id": "male_allu_arjun_pushpa",
+      "referenceId": "allu_arjun_pushpa_swagger_01",
+      "celebrityId": "allu_arjun",
+      "name": "Allu Arjun",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Allu_Arjun/allu_arjun_pushpa_swagger_01.jpg",
+      "badge": "ICON STAR",
+      "themeColor": "#ea580c",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.32,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55,
+        "jawOpen": 0.3
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.25
+      },
+      "headPose": {
+        "yaw": 0.08,
+        "pitch": -0.04,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "male_prabhas_darling",
+      "referenceId": "prabhas_darling_smile_01",
+      "celebrityId": "prabhas",
+      "name": "Prabhas",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Prabhas/prabhas_darling_smile_01.jpg",
+      "badge": "REBEL STAR",
+      "themeColor": "#f59e0b",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.78,
+        "eyeSpacingRatio": 0.45,
+        "noseWidthRatio": 0.5,
+        "noseHeightRatio": 0.35,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.32,
+        "jawWidthRatio": 0.78
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.78,
+        "cheekSquintLeft": 0.45,
+        "cheekSquintRight": 0.45,
+        "jawOpen": 0.22
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.2,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": 0.01,
+        "roll": -0.02
+      }
+    },
+    {
+      "id": "male_ranveer_energy",
+      "referenceId": "ranveer_singh_high_voltage_01",
+      "celebrityId": "ranveer_singh",
+      "name": "Ranveer Singh",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Ranveer_Singh/ranveer_singh_high_voltage_01.jpg",
+      "badge": "POWERHOUSE",
+      "themeColor": "#e11d48",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.36,
+        "mouthWidthRatio": 0.84,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.73
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.95,
+        "mouthSmileRight": 0.95,
+        "jawOpen": 0.58,
+        "eyeWideLeft": 0.65,
+        "eyeWideRight": 0.65,
+        "cheekSquintLeft": 0.8,
+        "cheekSquintRight": 0.8
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.45,
+        "mouthWidthRatio": 0.84,
+        "eyeOpenRatio": 0.28,
+        "mouthCornerTilt": 0.22,
+        "browRaiseRatio": 0.34
+      },
+      "headPose": {
+        "yaw": 0.1,
+        "pitch": -0.06,
+        "roll": 0.05
+      }
+    },
+    {
+      "id": "male_akshay_khiladi",
+      "referenceId": "akshay_kumar_khiladi_smirk_01",
+      "celebrityId": "akshay_kumar",
+      "name": "Akshay Kumar",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Akshay_Kumar/akshay_kumar_khiladi_smirk_01.jpg",
+      "badge": "KHILADI",
+      "themeColor": "#10b981",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.35,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.31,
+        "jawWidthRatio": 0.72
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.7,
+        "mouthSmileRight": 0.4,
+        "browInnerUp": 0.4,
+        "browDownRight": 0.35,
+        "eyeSquintLeft": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.15,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.28
+      },
+      "headPose": {
+        "yaw": -0.06,
+        "pitch": 0.03,
+        "roll": -0.03
+      }
+    },
+    {
+      "id": "male_salman_bhai",
+      "referenceId": "salman_khan_bhai_smirk_01",
+      "celebrityId": "salman_khan",
+      "name": "Salman Khan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Salman_Khan/salman_khan_bhai_smirk_01.jpg",
+      "badge": "BHAIJAAN",
+      "themeColor": "#3b82f6",
+      "expressionCategory": "sarcastic_smirk",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.8,
+        "eyeSpacingRatio": 0.46,
+        "noseWidthRatio": 0.52,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.8
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.5,
+        "mouthSmileRight": 0.6,
+        "eyeSquintLeft": 0.4,
+        "eyeSquintRight": 0.4,
+        "browDownLeft": 0.3,
+        "browDownRight": 0.3
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.1,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.08,
+        "browRaiseRatio": 0.2
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": -0.02,
+        "roll": 0.01
+      }
+    },
+    {
+      "id": "male_aamir_perfectionist",
+      "referenceId": "aamir_khan_perfectionist_smile_01",
+      "celebrityId": "aamir_khan",
+      "name": "Aamir Khan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Aamir_Khan/aamir_khan_perfectionist_smile_01.jpg",
+      "badge": "MR. PERFECTIONIST",
+      "themeColor": "#6366f1",
+      "expressionCategory": "raised_eyebrow_disbelief",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.67,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.73
+      },
+      "targetBlendshapes": {
+        "browInnerUp": 0.75,
+        "browDownLeft": 0.2,
+        "browDownRight": 0.2,
+        "eyeWideLeft": 0.6,
+        "eyeWideRight": 0.6,
+        "mouthSmileLeft": 0.55,
+        "mouthSmileRight": 0.55
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.18,
+        "mouthWidthRatio": 0.67,
+        "eyeOpenRatio": 0.26,
+        "mouthCornerTilt": 0.12,
+        "browRaiseRatio": 0.42
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": 0.06,
+        "roll": -0.04
+      }
+    },
+    {
+      "id": "male_ram_charan_mega",
+      "referenceId": "ram_charan_mega_smile_01",
+      "celebrityId": "ram_charan",
+      "name": "Ram Charan",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Ram_Charan/ram_charan_mega_smile_01.jpg",
+      "badge": "GLOBAL STAR",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.75
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.86,
+        "mouthSmileRight": 0.86,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6,
+        "jawOpen": 0.32
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.21,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.25
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.01,
+        "roll": 0.01
+      }
+    },
+    {
+      "id": "male_jr_ntr_tiger",
+      "referenceId": "jr_ntr_intense_grin_01",
+      "celebrityId": "jr_ntr",
+      "name": "Jr NTR",
+      "gender": "male",
+      "folderCategory": "Male",
+      "image": "/assets/LookALike/Male/Jr_NTR/jr_ntr_intense_grin_01.jpg",
+      "badge": "MAN OF MASSES",
+      "themeColor": "#14b8a6",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.78,
+        "eyeSpacingRatio": 0.45,
+        "noseWidthRatio": 0.49,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.75,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.77
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.84,
+        "mouthSmileRight": 0.84,
+        "cheekSquintLeft": 0.62,
+        "cheekSquintRight": 0.62,
+        "jawOpen": 0.36,
+        "browInnerUp": 0.3
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.32,
+        "mouthWidthRatio": 0.75,
+        "eyeOpenRatio": 0.23,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.27
+      },
+      "headPose": {
+        "yaw": -0.03,
+        "pitch": -0.03,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "female_sai_pallavi_laugh",
+      "referenceId": "sai_pallavi_natural_laughter_01",
+      "celebrityId": "sai_pallavi",
+      "name": "Sai Pallavi",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Sai_Pallavi/sai_pallavi_natural_laughter_01.webp",
+      "badge": "NATURAL BEAUTY",
+      "themeColor": "#ec4899",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.44,
+        "noseHeightRatio": 0.32,
+        "mouthWidthRatio": 0.8,
+        "chinRatio": 0.27,
+        "jawWidthRatio": 0.68
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.92,
+        "mouthSmileRight": 0.92,
+        "jawOpen": 0.48,
+        "eyeSquintLeft": 0.7,
+        "eyeSquintRight": 0.7,
+        "cheekSquintLeft": 0.75,
+        "cheekSquintRight": 0.75
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.4,
+        "mouthWidthRatio": 0.8,
+        "eyeOpenRatio": 0.17,
+        "mouthCornerTilt": 0.2,
+        "browRaiseRatio": 0.28
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": -0.02,
+        "roll": 0.04
+      }
+    },
+    {
+      "id": "female_deepika_dimple",
+      "referenceId": "deepika_padukone_dimpled_radiance_01",
+      "celebrityId": "deepika_padukone",
+      "name": "Deepika Padukone",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Deepika_Padukone/deepika_padukone_dimpled_radiance_01.jpg",
+      "badge": "GLOBAL ICON",
+      "themeColor": "#d946ef",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.43,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.69
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "mouthDimpleLeft": 0.75,
+        "mouthDimpleRight": 0.75,
+        "eyeSquintLeft": 0.5,
+        "eyeSquintRight": 0.5
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.23,
+        "mouthCornerTilt": 0.18,
+        "browRaiseRatio": 0.26
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": 0.01,
+        "roll": -0.02
+      }
+    },
+    {
+      "id": "female_alia_bhatt_grin",
+      "referenceId": "alia_bhatt_berlin_smile_01",
+      "celebrityId": "alia_bhatt",
+      "name": "Alia Bhatt",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Alia_Bhatt/alia_bhatt_berlin_smile_01.jpg",
+      "badge": "SUPERSTAR ACTRESS",
+      "themeColor": "#f43f5e",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.45,
+        "noseWidthRatio": 0.45,
+        "noseHeightRatio": 0.31,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.26,
+        "jawWidthRatio": 0.7
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55,
+        "jawOpen": 0.3,
+        "eyeWideLeft": 0.4,
+        "eyeWideRight": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.25,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.26
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": -0.03,
+        "roll": 0.03
+      }
+    },
+    {
+      "id": "female_kareena_geet",
+      "referenceId": "kareena_kapoor_geet_swag_01",
+      "celebrityId": "kareena_kapoor",
+      "name": "Kareena Kapoor",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Kareena_Kapoor/kareena_kapoor_geet_swag_01.jpg",
+      "badge": "BOLLYWOOD ROYALTY",
+      "themeColor": "#be185d",
+      "expressionCategory": "pursed_lips",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.44,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.55,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "targetBlendshapes": {
+        "mouthPucker": 0.75,
+        "mouthRollUpper": 0.5,
+        "mouthRollLower": 0.5,
+        "browInnerUp": 0.45,
+        "eyeSquintLeft": 0.4,
+        "eyeSquintRight": 0.4
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.14,
+        "mouthWidthRatio": 0.55,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.05,
+        "browRaiseRatio": 0.3
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.04,
+        "roll": 0.02
+      }
+    },
+    {
+      "id": "female_priyanka_desi_girl",
+      "referenceId": "priyanka_chopra_desi_girl_01",
+      "celebrityId": "priyanka_chopra",
+      "name": "Priyanka Chopra",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Priyanka_Chopra/priyanka_chopra_desi_girl_01.jpg",
+      "badge": "GLOBAL PHENOMENON",
+      "themeColor": "#8b5cf6",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.71
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.88,
+        "mouthSmileRight": 0.88,
+        "jawOpen": 0.34,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.18,
+        "browRaiseRatio": 0.27
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": -0.02,
+        "roll": -0.03
+      }
+    },
+    {
+      "id": "female_jyothika_radiance",
+      "referenceId": "jyothika_expressive_radiance_01",
+      "celebrityId": "jyothika",
+      "name": "Jyothika",
+      "gender": "female",
+      "folderCategory": "Female",
+      "image": "/assets/LookALike/Female/Jyothika/jyothika_expressive_radiance_01.jpg",
+      "badge": "ACTING POWERHOUSE",
+      "themeColor": "#fbbf24",
+      "expressionCategory": "smile_grin",
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.45,
+        "noseHeightRatio": 0.32,
+        "mouthWidthRatio": 0.78,
+        "chinRatio": 0.27,
+        "jawWidthRatio": 0.71
+      },
+      "targetBlendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "jawOpen": 0.42,
+        "eyeSquintLeft": 0.65,
+        "eyeSquintRight": 0.65,
+        "cheekSquintLeft": 0.7,
+        "cheekSquintRight": 0.7
+      },
+      "targetRatios": {
+        "mouthOpenRatio": 0.36,
+        "mouthWidthRatio": 0.78,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.19,
+        "browRaiseRatio": 0.29
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": -0.01,
+        "roll": 0.02
+      }
+    },
+    {
+      "referenceId": "dileep_kunjikoonan_quirky_01",
+      "celebrityId": "dileep",
+      "celebrityName": "Dileep",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Dileep/dileep_kunjikoonan_quirky_01.jpg",
+      "sha256": "6c08316a59e1c70773f3203b2577dac8ec004e2973af64b66f1ae9754761b572",
+      "featureCacheKey": "6c08316a59e1c707",
+      "blendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "eyeSquintLeft": 0.7,
+        "eyeSquintRight": 0.7,
+        "jawOpen": 0.4
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.32,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.15,
+        "mouthCornerTilt": 0.18,
+        "browRaiseRatio": 0.22
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.73
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.02,
+        "roll": -0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "dileep_chakkaramuthu_innocent_02",
+      "celebrityId": "dileep",
+      "celebrityName": "Dileep",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Dileep/dileep_chakkaramuthu_innocent_02.jpg",
+      "sha256": "b24a5867599aa0e75a6ad4afcabf57b409e997f1420fe2ab68f8c1405dd81a88",
+      "featureCacheKey": "b24a5867599aa0e7",
+      "blendshapes": {
+        "mouthSmileLeft": 0.65,
+        "mouthSmileRight": 0.65,
+        "browInnerUp": 0.5,
+        "eyeWideLeft": 0.3
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.18,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.12,
+        "browRaiseRatio": 0.28
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.73
+      },
+      "headPose": {
+        "yaw": -0.04,
+        "pitch": -0.05,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "salim_kumar_comedic_legend_01",
+      "celebrityId": "salim_kumar",
+      "celebrityName": "Salim Kumar",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Salim_Kumar/salim_kumar_comedic_legend_01.jpg",
+      "sha256": "1ced287787a490d6388beec287222ef833a151b55dbb2adbb263e0c5f4663118",
+      "featureCacheKey": "1ced287787a490d6",
+      "blendshapes": {
+        "jawOpen": 0.45,
+        "browInnerUp": 0.6,
+        "eyeWideLeft": 0.5,
+        "eyeWideRight": 0.5
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.35,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.25,
+        "mouthCornerTilt": 0.05,
+        "browRaiseRatio": 0.32
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.35,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.04,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "arvind_swamy_charismatic_smirk_01",
+      "celebrityId": "arvind_swamy",
+      "celebrityName": "Arvind Swamy",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Arvind_Swamy/arvind_swamy_charismatic_smirk_01.jpg",
+      "sha256": "778523d861b067fd01117a29294cb060a2daad232a73ac9d30b7f16afd064d43",
+      "featureCacheKey": "778523d861b067fd",
+      "blendshapes": {
+        "mouthSmileRight": 0.7,
+        "mouthDimpleRight": 0.6,
+        "browDownLeft": 0.35
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.12,
+        "mouthWidthRatio": 0.66,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.66,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.75
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.02,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "arjun_action_king_grin_01",
+      "celebrityId": "arjun",
+      "celebrityName": "Action King Arjun",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Arjun/arjun_action_king_grin_01.jpg",
+      "sha256": "b3cb7bbf2b0f23cd228c9c6cce8a5cc9d7476666110bc9ba66034f896df9f237",
+      "featureCacheKey": "b3cb7bbf2b0f23cd",
+      "blendshapes": {
+        "mouthSmileLeft": 0.8,
+        "mouthSmileRight": 0.8,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.24,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.76
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": -0.02,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "ashok_selvan_youthful_smile_01",
+      "celebrityId": "ashok_selvan",
+      "celebrityName": "Ashok Selvan",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Ashok_Selvan/ashok_selvan_youthful_smile_01.jpg",
+      "sha256": "90f6b3014687d1a37fbcab977fdec22b55cac974e3014bb3b2e0281e0017ffe4",
+      "featureCacheKey": "90f6b3014687d1a3",
+      "blendshapes": {
+        "mouthSmileLeft": 0.75,
+        "mouthSmileRight": 0.75,
+        "eyeSquintLeft": 0.4,
+        "eyeSquintRight": 0.4
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.2,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "soori_parotta_hilarious_01",
+      "celebrityId": "soori",
+      "celebrityName": "Soori",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Soori/soori_parotta_hilarious_01.jpg",
+      "sha256": "d4904eebd8042b3b5e0f5fd63042bb2358637010e02339a3579336b67a0b1000",
+      "featureCacheKey": "d4904eebd8042b3b",
+      "blendshapes": {
+        "jawOpen": 0.5,
+        "eyeWideLeft": 0.6,
+        "eyeWideRight": 0.6,
+        "browInnerUp": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.38,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.26,
+        "mouthCornerTilt": 0.08,
+        "browRaiseRatio": 0.3
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.49,
+        "noseHeightRatio": 0.35,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.71
+      },
+      "headPose": {
+        "yaw": -0.05,
+        "pitch": 0.03,
+        "roll": -0.03
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "soori_comedic_panic_02",
+      "celebrityId": "soori",
+      "celebrityName": "Soori",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Soori/soori_comedic_panic_02.jpg",
+      "sha256": "f5ef2aef4f713058b7c2996852f993cef4f0d61b853b1d0ac2644f0a3e4fc8a1",
+      "featureCacheKey": "f5ef2aef4f713058",
+      "blendshapes": {
+        "jawOpen": 0.55,
+        "browInnerUp": 0.55,
+        "mouthSmileLeft": 0.3
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.4,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.06,
+        "browRaiseRatio": 0.32
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.49,
+        "noseHeightRatio": 0.35,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.71
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.02,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "dhanush_playful_smirk_02",
+      "celebrityId": "dhanush",
+      "celebrityName": "Dhanush",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Dhanush/dhanush_playful_smirk_02.jpg",
+      "sha256": "d5f2ad6869e57053df489dbadf9fc256f7b4ba6f1d25b62b9c9ae064d31744e6",
+      "featureCacheKey": "d5f2ad6869e57053",
+      "blendshapes": {
+        "mouthSmileRight": 0.68,
+        "mouthDimpleRight": 0.62,
+        "eyeSquintRight": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.14,
+        "mouthWidthRatio": 0.67,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.13,
+        "browRaiseRatio": 0.23
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.67,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.7
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.01,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "fahadh_faasil_intense_quirk_01",
+      "celebrityId": "fahadh_faasil",
+      "celebrityName": "Fahadh Faasil",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Fahadh_Faasil/fahadh_faasil_intense_quirk_01.jpg",
+      "sha256": "86d782527fe5c38a97e4c8e2ef481cbe1eac5037dfc19e60133565a2f058eb9d",
+      "featureCacheKey": "86d782527fe5c38a",
+      "blendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "eyeWideLeft": 0.4,
+        "eyeWideRight": 0.4,
+        "browDownLeft": 0.3
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.22,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.26
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.73
+      },
+      "headPose": {
+        "yaw": -0.02,
+        "pitch": 0.03,
+        "roll": -0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "ganja_karuppu_confused_comic_01",
+      "celebrityId": "ganja_karuppu",
+      "celebrityName": "Ganja Karuppu",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Ganja_Karuppu/ganja_karuppu_confused_comic_01.jpg",
+      "sha256": "8fd100f3b5b815cc51c88c3475a3b396578a9315175cd297c92d6da27d87797a",
+      "featureCacheKey": "8fd100f3b5b815cc",
+      "blendshapes": {
+        "browInnerUp": 0.65,
+        "jawOpen": 0.4,
+        "eyeWideLeft": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.24,
+        "mouthCornerTilt": 0.07,
+        "browRaiseRatio": 0.34
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.04,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "goundamani_king_of_comedy_05",
+      "celebrityId": "goundamani",
+      "celebrityName": "Goundamani",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Goundamani/goundamani_king_of_comedy_05.webp",
+      "sha256": "4b86d5fd8125dc5083cf14d20e46dbd981250d0b7c467d5994b2bb5b5b82e3a6",
+      "featureCacheKey": "4b86d5fd8125dc50",
+      "blendshapes": {
+        "browInnerUp": 0.5,
+        "eyeWideLeft": 0.55,
+        "jawOpen": 0.35
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.23,
+        "mouthCornerTilt": 0.1,
+        "browRaiseRatio": 0.29
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": -0.06,
+        "pitch": 0.01,
+        "roll": -0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "karthi_paruthiveeran_swagger_01",
+      "celebrityId": "karthi",
+      "celebrityName": "Karthi",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Karthi/karthi_paruthiveeran_swagger_01.jpg",
+      "sha256": "453076015aad860c57ba63e875604b588a6cecea469e5a1f804f9e3615262e6a",
+      "featureCacheKey": "453076015aad860c",
+      "blendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.78,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.02,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "kalabhavan_mani_laughter_king_01",
+      "celebrityId": "kalabhavan_mani",
+      "celebrityName": "Kalabhavan Mani",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Kalabhavan_Mani/kalabhavan_mani_laughter_king_01.jpg",
+      "sha256": "52bbed3b61dca84cfaedbe086a957be7727a914561e11c70096a953045aef902",
+      "featureCacheKey": "52bbed3b61dca84c",
+      "blendshapes": {
+        "mouthSmileLeft": 0.9,
+        "mouthSmileRight": 0.9,
+        "jawOpen": 0.6,
+        "eyeSquintLeft": 0.8,
+        "eyeSquintRight": 0.8
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.44,
+        "mouthWidthRatio": 0.82,
+        "eyeOpenRatio": 0.12,
+        "mouthCornerTilt": 0.2,
+        "browRaiseRatio": 0.26
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.5,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.82,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.75
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.06,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "nivin_pauly_prem_smile_01",
+      "celebrityId": "nivin_pauly",
+      "celebrityName": "Nivin Pauly",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Nivin_Pauly/nivin_pauly_prem_smile_01.jpg",
+      "sha256": "b8bf9a1946a130fdfd57bfc1a459a357812ea4184fdcf559cceb01983109dc94",
+      "featureCacheKey": "b8bf9a1946a130fd",
+      "blendshapes": {
+        "mouthSmileLeft": 0.75,
+        "mouthSmileRight": 0.75,
+        "cheekSquintLeft": 0.5,
+        "cheekSquintRight": 0.5
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.2,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.73
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.01,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "rajinikanth_vintage_swagger_02",
+      "celebrityId": "rajinikanth",
+      "celebrityName": "Superstar Rajinikanth",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Rajinikanth/rajinikanth_vintage_swagger_02.jpg",
+      "sha256": "43c145116b22b35cf4f80ccf08a344b39ffcfd9ed75a46a8d5317151d537c3f6",
+      "featureCacheKey": "43c145116b22b35c",
+      "blendshapes": {
+        "mouthSmileLeft": 0.84,
+        "mouthSmileRight": 0.84,
+        "eyeSquintLeft": 0.6,
+        "eyeSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.28,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.17,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.07,
+        "pitch": 0.03,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "jayam_ravi_cheerful_smile_01",
+      "celebrityId": "jayam_ravi",
+      "celebrityName": "Jayam Ravi",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Jayam_Ravi/jayam_ravi_cheerful_smile_01.jpg",
+      "sha256": "74ffb288ba2a7ba2f20d0ceb473d776b18e0353f50aa3b6f240e46c6d4ce57c8",
+      "featureCacheKey": "74ffb288ba2a7ba2",
+      "blendshapes": {
+        "mouthSmileLeft": 0.8,
+        "mouthSmileRight": 0.8,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.24,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "harish_kalyan_charming_smile_01",
+      "celebrityId": "harish_kalyan",
+      "celebrityName": "Harish Kalyan",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Harish_Kalyan/harish_kalyan_charming_smile_01.jpg",
+      "sha256": "714548003e27067f9082072c9d4ef174f1fbdd4d33e78c77929c7aa388ec9ab6",
+      "featureCacheKey": "714548003e27067f",
+      "blendshapes": {
+        "mouthSmileLeft": 0.76,
+        "mouthSmileRight": 0.76,
+        "eyeSquintLeft": 0.45,
+        "eyeSquintRight": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.7,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.7,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": -0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "sarathkumar_supreme_star_01",
+      "celebrityId": "sarathkumar",
+      "celebrityName": "R. Sarathkumar",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Sarathkumar/sarathkumar_supreme_star_01.jpg",
+      "sha256": "e8b775b3b7f3a3b6ddc7c99a49fe214262d8030a4074150b6aa80719ee58aa38",
+      "featureCacheKey": "e8b775b3b7f3a3b6",
+      "blendshapes": {
+        "mouthSmileLeft": 0.72,
+        "mouthSmileRight": 0.72,
+        "browDownLeft": 0.3,
+        "browDownRight": 0.3
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.16,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.12,
+        "browRaiseRatio": 0.23
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.45,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.76
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.02,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "sasikumar_subramaniapuram_grin_01",
+      "celebrityId": "sasikumar",
+      "celebrityName": "M. Sasikumar",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Sasikumar/sasikumar_subramaniapuram_grin_01.jpg",
+      "sha256": "907e23552abc11040ca9c66ca3f8b05721690980735718432183d6f8663c7106",
+      "featureCacheKey": "907e23552abc1104",
+      "blendshapes": {
+        "mouthSmileRight": 0.65,
+        "mouthDimpleRight": 0.55,
+        "browDownLeft": 0.4
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.14,
+        "mouthWidthRatio": 0.66,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.11,
+        "browRaiseRatio": 0.22
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.66,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.03,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "silambarasan_tr_young_superstar_01",
+      "celebrityId": "silambarasan_tr",
+      "celebrityName": "Silambarasan TR",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Silambarasan_TR/silambarasan_tr_young_superstar_01.jpg",
+      "sha256": "c114fcea0c94581b2c001f236076d89ea8583ec19147852af2c10169b8416626",
+      "featureCacheKey": "c114fcea0c94581b",
+      "blendshapes": {
+        "mouthSmileRight": 0.72,
+        "mouthDimpleRight": 0.6,
+        "eyeSquintRight": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.15,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.02,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "tovino_thomas_minnal_smile_01",
+      "celebrityId": "tovino_thomas",
+      "celebrityName": "Tovino Thomas",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Tovino_Thomas/tovino_thomas_minnal_smile_01.jpg",
+      "sha256": "466e36dbb050c018ba5a24c9eb88059404b8582e950dbce70d63cc5028743e8c",
+      "featureCacheKey": "466e36dbb050c018",
+      "blendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.25,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.75
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "thalapathy_vijay_youthful_swag_04",
+      "celebrityId": "thalapathy_vijay",
+      "celebrityName": "Thalapathy Vijay",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Thalapathy_Vijay/thalapathy_vijay_youthful_swag_04.jpg",
+      "sha256": "87b2666dafbd34ac6613753c9b4182594aae3318b22319cb70d7a44138222513",
+      "featureCacheKey": "87b2666dafbd34ac",
+      "blendshapes": {
+        "mouthSmileLeft": 0.86,
+        "mouthSmileRight": 0.86,
+        "jawOpen": 0.38,
+        "cheekSquintLeft": 0.65,
+        "cheekSquintRight": 0.65
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.3,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.18,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.73
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": 0.01,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "vijay_sethupathi_candid_chuckle_04",
+      "celebrityId": "vijay_sethupathi",
+      "celebrityName": "Vijay Sethupathi",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Vijay_Sethupathi/vijay_sethupathi_candid_chuckle_04.jpg",
+      "sha256": "1fa396f053ffdc648371e52d9cd9e96a7a02baab77bfa7dae3e86724e4e6aa53",
+      "featureCacheKey": "1fa396f053ffdc64",
+      "blendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.78,
+        "eyeSquintLeft": 0.55,
+        "eyeSquintRight": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.02,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "chiyaan_vikram_versatile_smirk_01",
+      "celebrityId": "chiyaan_vikram",
+      "celebrityName": "Chiyaan Vikram",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Chiyaan_Vikram/chiyaan_vikram_versatile_smirk_01.jpg",
+      "sha256": "34fd8de43d23a2640c29d128d3274ce004fa29b9a01c826cf3242fb2dc54b2af",
+      "featureCacheKey": "34fd8de43d23a264",
+      "blendshapes": {
+        "mouthSmileRight": 0.75,
+        "mouthDimpleRight": 0.65,
+        "browDownLeft": 0.45
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.15,
+        "mouthWidthRatio": 0.68,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.23
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.68,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.75
+      },
+      "headPose": {
+        "yaw": 0.06,
+        "pitch": 0.03,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "vishal_action_hero_grin_01",
+      "celebrityId": "vishal",
+      "celebrityName": "Vishal",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Vishal/vishal_action_hero_grin_01.jpg",
+      "sha256": "6651e601749012a061b5b2cb974a048be16f95784c23f123f67184564a33a1e2",
+      "featureCacheKey": "6651e601749012a0",
+      "blendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.78,
+        "cheekSquintLeft": 0.5,
+        "cheekSquintRight": 0.5
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.19,
+        "mouthCornerTilt": 0.14,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.75,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.29,
+        "jawWidthRatio": 0.74
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.02,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "yash_rocky_bhai_swag_01",
+      "celebrityId": "yash",
+      "celebrityName": "Yash",
+      "gender": "male",
+      "imagePath": "/assets/LookALike/Male/Yash/yash_rocky_bhai_swag_01.jpg",
+      "sha256": "99f2d34561b3e77f368e90aa46150b150d09cadc98b7b5d27833207b54e45d5c",
+      "featureCacheKey": "99f2d34561b3e77f",
+      "blendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "jawOpen": 0.35,
+        "eyeSquintLeft": 0.55,
+        "eyeSquintRight": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.76,
+        "eyeSpacingRatio": 0.44,
+        "noseWidthRatio": 0.48,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.3,
+        "jawWidthRatio": 0.76
+      },
+      "headPose": {
+        "yaw": 0.05,
+        "pitch": -0.01,
+        "roll": 0.02
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "keerthy_suresh_radiant_smile_02",
+      "celebrityId": "keerthy_suresh",
+      "celebrityName": "Keerthy Suresh",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Keerthy_Suresh/keerthy_suresh_radiant_smile_02.jpg",
+      "sha256": "b7bf2e8b340ba3dee2d0df32e3c2f4aeaca2f03c65d7e740ee42adf4b1fa21b7",
+      "featureCacheKey": "b7bf2e8b340ba3de",
+      "blendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "cheekSquintLeft": 0.65,
+        "cheekSquintRight": 0.65
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.75,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.45,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.75,
+        "chinRatio": 0.27,
+        "jawWidthRatio": 0.69
+      },
+      "headPose": {
+        "yaw": -0.03,
+        "pitch": 0.01,
+        "roll": -0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "kovai_sarala_comedy_titan_03",
+      "celebrityId": "kovai_sarala",
+      "celebrityName": "Kovai Sarala",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Kovai_Sarala/kovai_sarala_comedy_titan_03.webp",
+      "sha256": "ef2cdbaec05cc1726101c7035928a259a872be74b4eec0f7e31327e9b8e15aa6",
+      "featureCacheKey": "ef2cdbaec05cc172",
+      "blendshapes": {
+        "jawOpen": 0.55,
+        "browInnerUp": 0.6,
+        "eyeWideLeft": 0.65,
+        "eyeWideRight": 0.65
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.42,
+        "mouthWidthRatio": 0.76,
+        "eyeOpenRatio": 0.26,
+        "mouthCornerTilt": 0.08,
+        "browRaiseRatio": 0.32
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.76,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.72
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.03,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "madhumitha_jangiri_laughter_01",
+      "celebrityId": "madhumitha",
+      "celebrityName": "Jangiri Madhumitha",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Madhumitha/madhumitha_jangiri_laughter_01.jpg",
+      "sha256": "ae9fb8e4bef0fd9f1654d102e88d24a598e020f3443e933df2a8e0441e26e15d",
+      "featureCacheKey": "ae9fb8e4bef0fd9f",
+      "blendshapes": {
+        "mouthSmileLeft": 0.8,
+        "mouthSmileRight": 0.8,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.24,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.7
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "urvashi_legendary_comedy_queen_01",
+      "celebrityId": "urvashi",
+      "celebrityName": "Urvashi",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Urvashi/urvashi_legendary_comedy_queen_01.jpg",
+      "sha256": "b32f368aa6d50e415af2822bf672e4d9aceb199eaf0feb5d8de2368cab630018",
+      "featureCacheKey": "b32f368aa6d50e41",
+      "blendshapes": {
+        "mouthSmileLeft": 0.78,
+        "mouthSmileRight": 0.78,
+        "browInnerUp": 0.4,
+        "cheekSquintLeft": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.22,
+        "mouthWidthRatio": 0.72,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.15,
+        "browRaiseRatio": 0.26
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.72,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.71
+      },
+      "headPose": {
+        "yaw": 0.04,
+        "pitch": 0.02,
+        "roll": 0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "priyanka_mohan_doctor_smile_01",
+      "celebrityId": "priyanka_mohan",
+      "celebrityName": "Priyanka Mohan",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Priyanka_Mohan/priyanka_mohan_doctor_smile_01.jpg",
+      "sha256": "1e271d44c36864499508e9a871eb8236fab3786fd6ff1f70e54261572363eff2",
+      "featureCacheKey": "1e271d44c3686449",
+      "blendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "cheekSquintLeft": 0.55,
+        "cheekSquintRight": 0.55
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.24,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.45,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.27,
+        "jawWidthRatio": 0.69
+      },
+      "headPose": {
+        "yaw": -0.02,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "simran_evergreen_grace_01",
+      "celebrityId": "simran",
+      "celebrityName": "Simran",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Simran/simran_evergreen_grace_01.jpg",
+      "sha256": "2cf1e432e833466fc393e4d4c43655bef5024aa8529557278886495442c7b948",
+      "featureCacheKey": "2cf1e432e833466f",
+      "blendshapes": {
+        "mouthSmileLeft": 0.85,
+        "mouthSmileRight": 0.85,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.26,
+        "mouthWidthRatio": 0.75,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.17,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.74,
+        "eyeSpacingRatio": 0.43,
+        "noseWidthRatio": 0.46,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.75,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.7
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.01,
+        "roll": -0.01
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "trisha_princess_smile_02",
+      "celebrityId": "trisha",
+      "celebrityName": "Trisha Krishnan",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Trisha/trisha_princess_smile_02.jpg",
+      "sha256": "579b812a46a87a4f0d9533bc7d4d2552a49dd2e004f55926dca8289835341cc7",
+      "featureCacheKey": "579b812a46a87a4f",
+      "blendshapes": {
+        "mouthSmileLeft": 0.84,
+        "mouthSmileRight": 0.84,
+        "cheekSquintLeft": 0.6,
+        "cheekSquintRight": 0.6
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.25,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.2,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.25
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.73,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.45,
+        "noseHeightRatio": 0.33,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.27,
+        "jawWidthRatio": 0.69
+      },
+      "headPose": {
+        "yaw": 0.02,
+        "pitch": 0.0,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    },
+    {
+      "referenceId": "vidyullekha_raman_quirky_grin_01",
+      "celebrityId": "vidyullekha_raman",
+      "celebrityName": "Vidyullekha Raman",
+      "gender": "female",
+      "imagePath": "/assets/LookALike/Female/Vidyullekha_Raman/vidyullekha_raman_quirky_grin_01.jpg",
+      "sha256": "b614bea34ca23a2459d0a4b38709d7bcff40cbc77cbba1af9f14c2bd07b91a58",
+      "featureCacheKey": "b614bea34ca23a24",
+      "blendshapes": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "cheekSquintLeft": 0.65,
+        "cheekSquintRight": 0.65
+      },
+      "ratios": {
+        "mouthOpenRatio": 0.24,
+        "mouthWidthRatio": 0.74,
+        "eyeOpenRatio": 0.18,
+        "mouthCornerTilt": 0.16,
+        "browRaiseRatio": 0.24
+      },
+      "appearanceFeatures": {
+        "faceAspectRatio": 0.72,
+        "eyeSpacingRatio": 0.42,
+        "noseWidthRatio": 0.47,
+        "noseHeightRatio": 0.34,
+        "mouthWidthRatio": 0.74,
+        "chinRatio": 0.28,
+        "jawWidthRatio": 0.71
+      },
+      "headPose": {
+        "yaw": 0.03,
+        "pitch": 0.01,
+        "roll": 0.0
+      },
+      "timestamp": "2026-11-12T17:30:00Z"
+    }
+  ]
+}
